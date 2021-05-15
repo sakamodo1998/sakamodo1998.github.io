@@ -69,7 +69,7 @@
     margin: 0 !important;
     width: 100% !important;
     height: 80%;
-    background: #f7f7f7;
+    background: #1a1a1a;
   }
 }
 .ins-section-wrapper {
@@ -82,7 +82,7 @@
 }
 .ins-section-container {
   position: relative !important;
-  background: #f7f7f7 !important;
+  background: #1a1a1a !important;
 }
 .ins-section {
   font-size: 14px !important;
