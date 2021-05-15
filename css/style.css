@@ -5791,6 +5791,7 @@ button.botui-actions-buttons-button {
     padding-top:11px;
     text-decoration-line:none
 }
+/*
 .logolink .sakurasono {
     background-color:rgba(255,255,255,.5);
     border-radius:5px;
@@ -5803,10 +5804,11 @@ button.botui-actions-buttons-button {
     text-size-adjust:100%;
     width:auto
 }
+
 .logolink a:hover .sakurasono {
     background-color:orange;
     color:#fff
-}
+}*/
 .logolink a:hover .shironeko,.logolink a:hover rt {
     color:orange
 }
@@ -5821,13 +5823,13 @@ button.botui-actions-buttons-button {
     padding-right:15px;
     padding-top:11px;
     text-decoration-line:none
-}
+}/*
 .logolink.moe-mashiro .sakurasono {
     font-size:25px;
     border-radius:9px;
     padding-bottom:2px;
     padding-top:5px
-}
+}*/
 .logolink.moe-mashiro .shironeko {
     margin-left:-5px
 }
@@ -7627,12 +7629,12 @@ img[src*="#width-10"] {
 img[src*="#in-center"] {
     margin-left:auto;
     margin-right:auto;
-    display:block
+    display:blockS
 }
 #banner_wave_1 {
     width:auto;
     height:65px;
-    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wave1.png") repeat-x;
+    background:url("https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0125/imgs/parts/wave1.png") repeat-x;
     position:absolute;
     bottom:0;
     width:400%;
