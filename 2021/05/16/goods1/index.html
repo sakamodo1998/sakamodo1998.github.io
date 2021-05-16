@@ -45,8 +45,8 @@ body{
   mashiro_option.site_name = "アタラヨ";
   mashiro_option.author_name = "アタラヨ";
   mashiro_option.site_url = "https://sakamodo1998.github.io/";
-  mashiro_option.v_appId = "";
-  mashiro_option.v_appKey = "";
+  mashiro_option.v_appId = "mPk156zoohoyijKfqNhMro9W-MdYXbMMI";
+  mashiro_option.v_appKey = "uIdzMK9bnkmFSdl53pSkORk7";
   mashiro_option.mathjax = "0";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
@@ -483,6 +483,20 @@ body{
 
 <!--
 
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "mPk156zoohoyijKfqNhMro9W-MdYXbMMI",
+        appKey: "uIdzMK9bnkmFSdl53pSkORk7",
+        path: window.location.pathname,
+        placeholder: "We looked for stranger things Cause thats just who we are"
+      })
+  }
+</script>
+
 --!>
 
       <section class="author-profile">
@@ -712,7 +726,7 @@ $(document).ready(function() {
 
     fixed="true"
 
-    autoplay="false"
+    autoplay="true"
 
     loop="all"
 
