@@ -129,33 +129,6 @@
   
   <entry>
     <title>TestPage</title>
-    <link href="https://sakamodo1998.github.io/2021/05/16/travel1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/16/travel1/</id>
-    <published>2021-05-15T16:49:14.000Z</published>
-    <updated>2021-05-16T19:03:24.344Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This is a test page to check if menus is
-        
-      
-    
-    </summary>
-    
-      <category term="旅行" scheme="https://sakamodo1998.github.io/categories/%E6%97%85%E8%A1%8C/"/>
-    
-    
-      <category term="游记" scheme="https://sakamodo1998.github.io/tags/%E6%B8%B8%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestPage</title>
     <link href="https://sakamodo1998.github.io/2021/05/16/share1/"/>
     <id>https://sakamodo1998.github.io/2021/05/16/share1/</id>
     <published>2021-05-15T16:49:14.000Z</published>
@@ -178,6 +151,33 @@
     
     
       <category term="好文" scheme="https://sakamodo1998.github.io/tags/%E5%A5%BD%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TestPage</title>
+    <link href="https://sakamodo1998.github.io/2021/05/16/travel1/"/>
+    <id>https://sakamodo1998.github.io/2021/05/16/travel1/</id>
+    <published>2021-05-15T16:49:14.000Z</published>
+    <updated>2021-05-16T19:03:24.344Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;This is a test page to check if menus is
+        
+      
+    
+    </summary>
+    
+      <category term="旅行" scheme="https://sakamodo1998.github.io/categories/%E6%97%85%E8%A1%8C/"/>
+    
+    
+      <category term="游记" scheme="https://sakamodo1998.github.io/tags/%E6%B8%B8%E8%AE%B0/"/>
     
   </entry>
   
