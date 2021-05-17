@@ -75,33 +75,6 @@
   
   <entry>
     <title>TestPage</title>
-    <link href="https://sakamodo1998.github.io/2021/05/16/goods1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/16/goods1/</id>
-    <published>2021-05-15T16:49:14.000Z</published>
-    <updated>2021-05-16T19:00:14.978Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This is a test page to check if menus is
-        
-      
-    
-    </summary>
-    
-      <category term="资源" scheme="https://sakamodo1998.github.io/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-      <category term="资源" scheme="https://sakamodo1998.github.io/tags/%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestPage</title>
     <link href="https://sakamodo1998.github.io/2021/05/16/ideas1/"/>
     <id>https://sakamodo1998.github.io/2021/05/16/ideas1/</id>
     <published>2021-05-15T16:49:14.000Z</published>
@@ -151,6 +124,33 @@
     
     
       <category term="好文" scheme="https://sakamodo1998.github.io/tags/%E5%A5%BD%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TestPage</title>
+    <link href="https://sakamodo1998.github.io/2021/05/16/goods1/"/>
+    <id>https://sakamodo1998.github.io/2021/05/16/goods1/</id>
+    <published>2021-05-15T16:49:14.000Z</published>
+    <updated>2021-05-16T19:00:14.978Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;This is a test page to check if menus is
+        
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="https://sakamodo1998.github.io/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="资源" scheme="https://sakamodo1998.github.io/tags/%E8%B5%84%E6%BA%90/"/>
     
   </entry>
   
