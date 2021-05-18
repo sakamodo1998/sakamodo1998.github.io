@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sakamodo1998.github.io/"/>
-  <updated>2021-05-16T18:26:26.453Z</updated>
+  <updated>2021-05-18T05:59:25.925Z</updated>
   <id>https://sakamodo1998.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA</title>
+    <link href="https://sakamodo1998.github.io/2021/05/18/ideas1/"/>
+    <id>https://sakamodo1998.github.io/2021/05/18/ideas1/</id>
+    <published>2021-05-18T05:58:45.000Z</published>
+    <updated>2021-05-18T05:59:25.925Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;This is a test page to check if menus is
+        
+      
+    
+    </summary>
+    
+      <category term="随想" scheme="https://sakamodo1998.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+      <category term="memo" scheme="https://sakamodo1998.github.io/tags/memo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站用到的p站作品</title>
+    <link href="https://sakamodo1998.github.io/2021/05/18/goods1/"/>
+    <id>https://sakamodo1998.github.io/2021/05/18/goods1/</id>
+    <published>2021-05-18T05:50:04.000Z</published>
+    <updated>2021-05-18T06:09:48.108Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;首页和各种封面上用到的图片的汇总&quot;&gt;&lt;a href=&quot;#首页和各种封面上用到的图片的汇总&quot; class=&quot;headerlink&quot; title=&quot;首页和各种封面上用到的图片的汇总&quot;&gt;&lt;/a&gt;首页和各种封面上用到的图片的汇总&lt;/h1&gt;&lt;hr&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="https://sakamodo1998.github.io/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="资源" scheme="https://sakamodo1998.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -70,60 +124,6 @@
     
     
       <category term="悦读" scheme="https://sakamodo1998.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestPage</title>
-    <link href="https://sakamodo1998.github.io/2021/05/16/goods1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/16/goods1/</id>
-    <published>2021-05-15T16:49:14.000Z</published>
-    <updated>2021-05-16T19:00:14.978Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This is a test page to check if menus is
-        
-      
-    
-    </summary>
-    
-      <category term="资源" scheme="https://sakamodo1998.github.io/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-      <category term="资源" scheme="https://sakamodo1998.github.io/tags/%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestPage</title>
-    <link href="https://sakamodo1998.github.io/2021/05/16/ideas1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/16/ideas1/</id>
-    <published>2021-05-15T16:49:14.000Z</published>
-    <updated>2021-05-16T19:00:16.763Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This is a test page to check if menus is
-        
-      
-    
-    </summary>
-    
-      <category term="随想" scheme="https://sakamodo1998.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
-    
-    
-      <category term="memo" scheme="https://sakamodo1998.github.io/tags/memo/"/>
     
   </entry>
   
