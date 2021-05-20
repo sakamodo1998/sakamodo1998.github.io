@@ -71,6 +71,33 @@
   </entry>
   
   <entry>
+    <title>TestPage</title>
+    <link href="https://sakamodo1998.github.io/2021/05/16/daily1/"/>
+    <id>https://sakamodo1998.github.io/2021/05/16/daily1/</id>
+    <published>2021-05-15T16:49:14.000Z</published>
+    <updated>2021-05-16T19:00:18.142Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;This is a test page to check if menus is
+        
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="https://sakamodo1998.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="悦读" scheme="https://sakamodo1998.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="https://sakamodo1998.github.io/2021/05/16/HelloWorld/"/>
     <id>https://sakamodo1998.github.io/2021/05/16/HelloWorld/</id>
@@ -97,33 +124,6 @@
       <category term="Hexo-Sakura" scheme="https://sakamodo1998.github.io/tags/Hexo-Sakura/"/>
     
       <category term="blog" scheme="https://sakamodo1998.github.io/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestPage</title>
-    <link href="https://sakamodo1998.github.io/2021/05/16/daily1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/16/daily1/</id>
-    <published>2021-05-15T16:49:14.000Z</published>
-    <updated>2021-05-16T19:00:18.142Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This is a test page to check if menus is
-        
-      
-    
-    </summary>
-    
-      <category term="生活" scheme="https://sakamodo1998.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="悦读" scheme="https://sakamodo1998.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
     
   </entry>
   
