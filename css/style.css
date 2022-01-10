@@ -7634,7 +7634,7 @@ img[src*="#in-center"] {
 #banner_wave_1 {
     width:auto;
     height:65px;
-    background:url("https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0125/imgs/parts/wave1.png") repeat-x;
+    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wave1.png") repeat-x;
     position:absolute;
     bottom:0;
     width:400%;
@@ -7657,12 +7657,25 @@ img[src*="#in-center"] {
     transition-property:opacity,bottom;
     transition-duration:.4s,.4s
 }
+#banner_wave_3 {
+    width:auto;
+    height:65px;
+    background:url("https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0125/imgs/parts/wave1.png") repeat-x;
+    position:absolute;
+    bottom:0;
+    width:400%;
+    left:-236px;
+    z-index:5;
+    opacity:1;
+    transition-property:opacity,bottom;
+    transition-duration:.4s,.4s
+}
 .banner_wave_hide,.banner_wave_hide_fit_skin {
     opacity:0 !important;
     bottom:-999px !important
 }
 @media(max-width:860px) {
-    #banner_wave_1,#banner_wave_2 {
+    #banner_wave_1,#banner_wave_2,#banner_wave_3 {
     display:none
 }
 }#video-add {

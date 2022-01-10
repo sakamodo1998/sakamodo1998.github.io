@@ -59,9 +59,19 @@ mashiro_global.ini = new function () {
           'left': '-1009px'
         }, 60000, 'linear', waveloop2)
       }
+
+      function waveloop3 () {
+        $('#banner_wave_2').css({
+          'left': '-236px'
+        }).animate({
+          'left': '-1233px'
+        }, 25000, 'linear', waveloop3)
+      }
+
       if (screen && screen.width > 860) {
         waveloop1()
         waveloop2()
+        waveloop3()
       }
       if (navigator.userAgent.indexOf('AppleWebKit') != -1) {
         $('body').addClass('isWebKit')
@@ -427,9 +437,11 @@ function checkBgImgCookie () {
   if (!bgurl) {
     $('#banner_wave_1').removeClass('banner_wave_hide_fit_skin')
     $('#banner_wave_2').removeClass('banner_wave_hide_fit_skin')
+    $('#banner_wave_3').addClass('banner_wave_hide_fit_skin')
   } else {
     $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
     $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
+    $('#banner_wave_3').addClass('banner_wave_hide_fit_skin')
   }
   if (bgurl != '') {
     if (bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/sakura.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/plaid.jpg' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/star.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/point.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/little-monster.png') {
@@ -468,6 +480,7 @@ if (mashiro_global.variables.isNight) {
   $('.changeSkin-gear, .toc').css('background', 'none')
 }
 $(document).ready(function () {
+
   function changeBG (tagid, url) {
     $('.skin-menu ' + tagid).click(function () {
       mashiro_global.variables.skinSecter = true
@@ -479,6 +492,7 @@ $(document).ready(function () {
       $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
       $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
       $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
+      $('#banner_wave_3').addClass('banner_wave_hide_fit_skin')
       closeSkinMenu()
       setCookie('bgImgSetting', url, 30)
     })
@@ -490,11 +504,12 @@ $(document).ready(function () {
       mashiro_global.variables.isNight = true
       $('#night-mode-cover').css('visibility', 'hidden')
       $('body').css('background-image', 'url(' + url + ')')
-      $('.blank').css('background-color', 'rgba(255,255,255,1)')
+      $('.blank').css('background-color', 'rgba(255,255,255,.0)')
       $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
       $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
       $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
       $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
+      $('#banner_wave_3').addClass('banner_wave_hide_fit_skin')
       closeSkinMenu()
       setCookie('bgImgSetting', url, 30)
     })
@@ -503,21 +518,25 @@ $(document).ready(function () {
   changeBG('#gribs-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/plaid.jpg')
   changeBG('#pixiv-bg', 'https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0301/imgs/toppage/15.jpg')
   changeBG('#KAdots-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/point.png')
-  changeBG('#totem-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/little-monster.png')
-  changeBGnoTrans('#bing-bg', 'https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0301/imgs/toppage/12.png')
+  //changeBG('#totem-bg', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/little-monster.png')
+  //changeBGnoTrans('#bing-bg', 'https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0301/imgs/toppage/12.png')
+  changeBGnoTrans('#bing-bg', 'https://api.2heng.xin/bing/')
+  
   $('.skin-menu #white-bg').click(function () {
     mashiro_global.variables.skinSecter = false
     mashiro_global.variables.isNight = false
     $('#night-mode-cover').css('visibility', 'hidden')
-    $('body').css('background-image', 'none')
-    $('.blank').css('background-color', 'rgba(255,255,255,.0)')
+    $('body').css('background-image', 'url(https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110/imgs/background/White.png)')
+    $('.blank').css('background-color', 'rgba(255,255,255,1)')
     $('.pattern-center-sakura').removeClass('pattern-center-sakura').addClass('pattern-center')
     $('.headertop-bar-sakura').removeClass('headertop-bar-sakura').addClass('headertop-bar')
     $('#banner_wave_1').removeClass('banner_wave_hide_fit_skin')
     $('#banner_wave_2').removeClass('banner_wave_hide_fit_skin')
+    $('#banner_wave_3').addClass('banner_wave_hide_fit_skin')
     closeSkinMenu()
     setCookie('bgImgSetting', '', 30)
   })
+
   $('.skin-menu #dark-bg').click(function () {
     mashiro_global.variables.skinSecter = true
     mashiro_global.variables.isNight = true
@@ -528,7 +547,24 @@ $(document).ready(function () {
     $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
     $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
     $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
+    $('#banner_wave_3').addClass('banner_wave_hide_fit_skin')
     closeSkinMenu()
+  })
+
+//把这个模式当做暗色背景(只是单纯懒得改了)↓
+  $('.skin-menu #totem-bg').click(function () {
+    mashiro_global.variables.skinSecter = false
+    mashiro_global.variables.isNight = false
+    $('#night-mode-cover').css('visibility', 'hidden')
+    $('body').css('background-image', 'none')
+    $('.blank').css('background-color', 'rgba(255,255,255,.0)')
+    $('.pattern-center-sakura').removeClass('pattern-center-sakura').addClass('pattern-center')
+    $('.headertop-bar-sakura').removeClass('headertop-bar-sakura').addClass('headertop-bar')
+    $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
+    $('#banner_wave_3').removeClass('banner_wave_hide_fit_skin')
+    $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
+    closeSkinMenu()
+    setCookie('bgImgSetting', '', 30)
   })
 
   function closeSkinMenu () {
@@ -1145,6 +1181,8 @@ var home = location.href,
       })
       $('#banner_wave_1').addClass('banner_wave_hide')
       $('#banner_wave_2').addClass('banner_wave_hide')
+      $('#banner_wave_3').addClass('banner_wave_hide')
+      
             // for (var i = 0; i < ap.length; i++) {
             //     try {
             //         ap[i].destroy()
@@ -1161,6 +1199,7 @@ var home = location.href,
       })
       $('#banner_wave_1').removeClass('banner_wave_hide')
       $('#banner_wave_2').removeClass('banner_wave_hide')
+      $('#banner_wave_3').reniveClass('banner_wave_hide')
       s.pause()
     }, liveplay: function () {
       if (s.oncanplay != undefined && $('.haslive').length > 0) {
