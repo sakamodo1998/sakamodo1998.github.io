@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sakamodo1998.github.io/"/>
-  <updated>2022-01-10T18:18:02.810Z</updated>
+  <updated>2022-01-10T18:26:34.607Z</updated>
   <id>https://sakamodo1998.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://sakamodo1998.github.io/2022/01/11/2022-01-11%E5%AD%97%E7%AC%A6%E7%94%BB/"/>
     <id>https://sakamodo1998.github.io/2022/01/11/2022-01-11字符画/</id>
     <published>2022-01-10T18:10:35.000Z</published>
-    <updated>2022-01-10T18:18:02.810Z</updated>
+    <updated>2022-01-10T18:26:34.607Z</updated>
     
     <summary type="html">
     
@@ -47,52 +47,9 @@
   </entry>
   
   <entry>
-    <title>make git tool</title>
-    <link href="https://sakamodo1998.github.io/2022/01/10/make-git-tool/"/>
-    <id>https://sakamodo1998.github.io/2022/01/10/make-git-tool/</id>
-    <published>2022-01-10T12:05:33.000Z</published>
-    <updated>2022-01-10T12:05:33.763Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA</title>
-    <link href="https://sakamodo1998.github.io/2021/05/18/ideas1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/18/ideas1/</id>
-    <published>2021-05-18T05:58:45.000Z</published>
-    <updated>2021-05-18T05:59:25.925Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This is a test page to check if menus is
-        
-      
-    
-    </summary>
-    
-      <category term="随想" scheme="https://sakamodo1998.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
-    
-    
-      <category term="memo" scheme="https://sakamodo1998.github.io/tags/memo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>背景原图</title>
-    <link href="https://sakamodo1998.github.io/2021/05/18/goods1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/18/goods1/</id>
+    <link href="https://sakamodo1998.github.io/2021/05/18/%E8%83%8C%E6%99%AF%E5%9B%BE%E5%87%BA%E5%A4%84/"/>
+    <id>https://sakamodo1998.github.io/2021/05/18/背景图出处/</id>
     <published>2021-05-18T05:50:04.000Z</published>
     <updated>2021-05-18T06:12:19.443Z</updated>
     
@@ -113,33 +70,6 @@
     
     
       <category term="资源" scheme="https://sakamodo1998.github.io/tags/%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestPage</title>
-    <link href="https://sakamodo1998.github.io/2021/05/16/daily1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/16/daily1/</id>
-    <published>2021-05-15T16:49:14.000Z</published>
-    <updated>2021-05-16T19:00:18.142Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This is a test page to check if menus is
-        
-      
-    
-    </summary>
-    
-      <category term="生活" scheme="https://sakamodo1998.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="悦读" scheme="https://sakamodo1998.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
     
   </entry>
   
@@ -170,60 +100,6 @@
       <category term="Hexo-Sakura" scheme="https://sakamodo1998.github.io/tags/Hexo-Sakura/"/>
     
       <category term="blog" scheme="https://sakamodo1998.github.io/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestPage</title>
-    <link href="https://sakamodo1998.github.io/2021/05/16/share1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/16/share1/</id>
-    <published>2021-05-15T16:49:14.000Z</published>
-    <updated>2021-05-16T19:00:12.610Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This is a test page to check if menus is
-        
-      
-    
-    </summary>
-    
-      <category term="转载" scheme="https://sakamodo1998.github.io/categories/%E8%BD%AC%E8%BD%BD/"/>
-    
-    
-      <category term="好文" scheme="https://sakamodo1998.github.io/tags/%E5%A5%BD%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestPage</title>
-    <link href="https://sakamodo1998.github.io/2021/05/16/travel1/"/>
-    <id>https://sakamodo1998.github.io/2021/05/16/travel1/</id>
-    <published>2021-05-15T16:49:14.000Z</published>
-    <updated>2021-05-16T19:03:24.344Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This is a test page to check if menus is
-        
-      
-    
-    </summary>
-    
-      <category term="旅行" scheme="https://sakamodo1998.github.io/categories/%E6%97%85%E8%A1%8C/"/>
-    
-    
-      <category term="游记" scheme="https://sakamodo1998.github.io/tags/%E6%B8%B8%E8%AE%B0/"/>
     
   </entry>
   
