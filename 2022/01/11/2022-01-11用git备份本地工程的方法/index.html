@@ -390,10 +390,10 @@ body{
 <h1 id="step1-注册github账号并新建一个仓库"><a href="#step1-注册github账号并新建一个仓库" class="headerlink" title="step1: 注册github账号并新建一个仓库"></a>step1: 注册github账号并新建一个仓库</h1><p>注册账号就不说了直接从新建仓库开始8<br>进入github的主页之后点击右上角的小加号然后”new repository”<br><img src="https://s2.loli.net/2022/01/11/FhyNaprdTRBszlf.png"><br>然后再新建的页面里完善仓库的信息,必填的是Owner和Repository name,然后在下面仓库类型的Public和Private里选择一个.==注意! 对于开源的项目可以选择Public,但是像毕业论文这一类的私密项目一定要选择Private!== 不然小心导师提刀来见..</p>
 <p>另外下面的三个方框里建议钩一下Add a README file,README文件的内容会之后在仓库页面里直接显示出来这样以后写些memo的话应该会方便一点</p>
 <p>最后点击最下面的Create repository就ok了.跳出来的页面先放在一边,一会再用.<br><img src="https://s2.loli.net/2022/01/11/VsZWlNtbmgDQr1x.png"></p>
-<h1 id="step2-本地设置好git并克隆刚才的仓库"><a href="#step2-本地设置好git并克隆刚才的仓库" class="headerlink" title="step2: 本地设置好git并克隆刚才的仓库"></a>step2: 本地设置好git并克隆刚才的仓库</h1><h2 id="配置git-bash用户"><a href="#配置git-bash用户" class="headerlink" title="配置git bash用户"></a>配置git bash用户</h2><p>在本地想要存放工程文件的地方右键空白出然后点git bash here<br><img src="https://s2.loli.net/2022/01/11/kCudL82jUMOxcYB.png"><br>然后在弹出的窗口里输入并回车</p>
+<h1 id="step2-本地设置git并克隆仓库"><a href="#step2-本地设置git并克隆仓库" class="headerlink" title="step2: 本地设置git并克隆仓库"></a>step2: 本地设置git并克隆仓库</h1><h2 id="配置git用户"><a href="#配置git用户" class="headerlink" title="配置git用户"></a>配置git用户</h2><p>在本地想要存放工程文件的地方右键空白出然后点git bash here<br><img src="https://s2.loli.net/2022/01/11/kCudL82jUMOxcYB.png"><br>然后在弹出的窗口里输入并回车</p>
 <pre><code>git config --global user.email &quot;myemail@email.com&quot;
 </code></pre>
-<p>注意要把”<a href="mailto:&#109;&#x79;&#x65;&#109;&#97;&#105;&#108;&#x40;&#101;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#109;&#x79;&#x65;&#109;&#97;&#105;&#108;&#x40;&#101;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#x6d;</a>“的引号内内容替换成在github注册的邮箱来把本地git和云端账户相关联</p>
+<p>注意要把”<a href="mailto:&#x6d;&#x79;&#101;&#109;&#x61;&#x69;&#x6c;&#64;&#x65;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#109;">&#x6d;&#x79;&#101;&#109;&#x61;&#x69;&#x6c;&#64;&#x65;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#109;</a>“的引号内内容替换成在github注册的邮箱来把本地git和云端账户相关联</p>
 <h2 id="克隆云端仓库到本地"><a href="#克隆云端仓库到本地" class="headerlink" title="克隆云端仓库到本地"></a>克隆云端仓库到本地</h2><p>回到刚才step1打开的仓库页面点击绿色的Code按钮然后选择HTTPS之后复制URL<br><img src="https://s2.loli.net/2022/01/11/BUZ6rmSCftAKoDi.png"></p>
 <p>之后回到命令行里输入</p>
 <pre><code>git clone 复制的URL
