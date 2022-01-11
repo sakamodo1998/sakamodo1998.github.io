@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sakamodo1998.github.io/"/>
-  <updated>2022-01-10T18:26:34.607Z</updated>
+  <updated>2022-01-11T09:56:02.468Z</updated>
   <id>https://sakamodo1998.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用git备份本地工程</title>
+    <link href="https://sakamodo1998.github.io/2022/01/11/2022-01-11%E7%94%A8git%E5%A4%87%E4%BB%BD%E6%9C%AC%E5%9C%B0%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://sakamodo1998.github.io/2022/01/11/2022-01-11用git备份本地工程的方法/</id>
+    <published>2022-01-11T05:36:24.000Z</published>
+    <updated>2022-01-11T09:56:02.468Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;  哦对,这个教程是针对Windows10的.&lt;/p&gt;
+&lt;h1 id=&quot;step0-下载git&quot;&gt;&lt;a href=&quot;#step0-下载git&quot; class=&quot;headerlink&quot; title=&quot;step0: 下载git&quot;&gt;&lt;/a&gt;step0:
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="cmd" scheme="https://sakamodo1998.github.io/tags/cmd/"/>
+    
+      <category term="git" scheme="https://sakamodo1998.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>cmd命令的字符画</title>
