@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sakamodo1998.github.io/"/>
-  <updated>2022-01-11T10:13:50.624Z</updated>
+  <updated>2022-01-12T06:56:57.071Z</updated>
   <id>https://sakamodo1998.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>配置本地git的用户名密码以及ssh</title>
+    <link href="https://sakamodo1998.github.io/2022/01/12/2022-01-12%E9%85%8D%E7%BD%AE%E6%9C%AC%E5%9C%B0git%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D%E5%AF%86%E7%A0%81%E4%BB%A5%E5%8F%8Assh/"/>
+    <id>https://sakamodo1998.github.io/2022/01/12/2022-01-12配置本地git的用户名密码以及ssh/</id>
+    <published>2022-01-12T06:34:46.000Z</published>
+    <updated>2022-01-12T06:56:57.071Z</updated>
+    
+    <summary type="html">
+    
+      配置git的本地凭据以让上传下载更加丝滑
+    
+    </summary>
+    
+      <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="git" scheme="https://sakamodo1998.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一些关于网站的技术参考</title>
     <link href="https://sakamodo1998.github.io/2022/01/11/2022-01-11%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E7%BD%91%E7%AB%99%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8F%82%E8%80%83/"/>
     <id>https://sakamodo1998.github.io/2022/01/11/2022-01-11一些关于网站的技术参考/</id>
     <published>2022-01-11T10:07:14.000Z</published>
-    <updated>2022-01-11T10:13:50.624Z</updated>
+    <updated>2022-01-12T06:54:49.322Z</updated>
     
     <summary type="html">
     
