@@ -387,7 +387,39 @@ body{
           <blockquote>
 <p><a target="_blank" rel="noopener" href="https://atarayo.xyz/2022/01/11/2022-01-11%E7%94%A8git%E5%A4%87%E4%BB%BD%E6%9C%AC%E5%9C%B0%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%96%B9%E6%B3%95/">上一篇</a>配置了云端和本地的git环境,但是存在私有库每次操作都需要输入密码的问题.可以通过在个人的电脑上配置好凭据以省略此步骤以使得体验更加丝滑</p>
 </blockquote>
-<p> <b><font size="6"><div align="center"><span style="color:red;">注意:以下内容只能在可以信赖的电脑上操作</span></div><font></b></p>
+<p> <b><font size="6"><div align="center"><span style="color:red;">注意:以下内容只能在可以信赖的电脑上操作</span></div></font></b></p>
+<h1 id="设置用户名密码"><a href="#设置用户名密码" class="headerlink" title="设置用户名密码:"></a>设置用户名密码:</h1><h2 id="全局设置的情况"><a href="#全局设置的情况" class="headerlink" title="全局设置的情况:"></a>全局设置的情况:</h2><p>全局设置即为此电脑的所有仓库默认使用这套信息<br>在仓库文件夹里右键git bash here,输入以下代码</p>
+<pre><code class="bat">git config --global user.name &quot;用户名&quot;
+git config --global user.password &quot;密码&quot;
+git config --global user.email &quot;邮箱&quot;
+</code></pre>
+<h2 id="个别仓库设置的情况"><a href="#个别仓库设置的情况" class="headerlink" title="个别仓库设置的情况"></a>个别仓库设置的情况</h2><p>需要个别设置的时候只需去掉 <code>--global</code> 选项即可<br>在需要更改的仓库文件里giy bash here,输入</p>
+<pre><code>git config user.name &quot;用户名&quot;
+git config user.password &quot;密码&quot;
+git config user.email &quot;邮箱&quot;
+</code></pre>
+<h1 id="设置ssh"><a href="#设置ssh" class="headerlink" title="设置ssh"></a>设置ssh</h1><h2 id="生成一串新秘钥"><a href="#生成一串新秘钥" class="headerlink" title="生成一串新秘钥"></a>生成一串新秘钥</h2><p>打开Git Bash,输入</p>
+<pre><code>ssh-keygen -t rsa -C &quot;邮箱&quot;
+</code></pre>
+<p>回车后系统会说</p>
+<pre><code>$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/(username)/.ssh/id_rsa):
+</code></pre>
+<p>此时回车,新生成的key便保存在默认路径里,然后系统说</p>
+<pre><code>Enter passphrase (empty for no passphrase):
+</code></pre>
+<p>此时两下回车以不设置密码<br>之后会出来一大串信息,最后附带一张写着SHA256的图就说明生成成功了<br>接下来需要找到并复制生成的SSH key<br>打开</p>
+<pre><code>C:\Users\本机用户名\.ssh
+</code></pre>
+<p>本机用户名搞不清楚的话可以看下git bash里下图框住的部分就是本机用户名<br><img src="https://s2.loli.net/2022/01/12/KhkRG1LD3valNrI.png"></p>
+<p>进入文件以后会看到如下两个文件<br><img src="https://s2.loli.net/2022/01/12/SRTImGO9uMXli26.png"><br>其中<code>id_rsa</code>是私钥,不能给别人看,<code>id_rsa.pub</code>是公钥,需要告诉ssh服务器的.<br>右键用记事本打开<code>id_rsa.pub</code>并复制全文.</p>
+<h2 id="在github添加秘钥"><a href="#在github添加秘钥" class="headerlink" title="在github添加秘钥"></a>在github添加秘钥</h2><p>打开github点右上角头像后下拉菜单点<code>settings</code><br><img src="https://s2.loli.net/2022/01/12/PTYFS6s9wbhfgit.png"><br>在设置页面里依次点<code>SSH and GPG keys</code>和<code>New SSH key</code><br><img src="https://s2.loli.net/2022/01/12/oEqD9byxJXeVMYZ.png"><br>然后在把刚才复制的公钥粘到Key里,再在Tittle里填个好听的名字,最后点下面的<code>Add SSH key</code>就成了<br><img src="https://s2.loli.net/2022/01/12/UhJFNO1GrKZXL6T.png"></p>
+<p>最后回来git bash确认一下一切是否都设置好了<br>输入</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>回车后如果看到电脑跟你say Hi的话就配置成功了<br><img src="https://s2.loli.net/2022/01/12/Zxqn5paoAKYjTwE.png"><br>理论上这些设置完成之后再上传或克隆文件时就算是私有库也能跳过输用户名密码的环节了.好耶!</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><del>秘钥的读音是”秘药”但是不知道为什么总是会读成”秘尺”</del></p>
 
         </div>
         <!-- .entry-content -->
@@ -476,7 +508,7 @@ body{
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
         <!-- 安装插件npm install hexo-wordcount --save -->
-        <span class="post-count">86字</span>
+        <span class="post-count">657字</span>
       </span>
     </span>
 
@@ -485,7 +517,7 @@ body{
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
+        <span class="post-count">2分</span>
       </span>
     </span>
 </div>
