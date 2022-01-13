@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">bangumi | アタラヨ</title>
+  
+    <link rel="shortcut icon" href="/imgs/indexpage/favicon.jpg">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+
+<style>
+body{
+  background-color: #ffffff
+}
+</style>
+
+
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   * head上面两行是看板娘,正在施工!!!!!
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "アタラヨ";
+  mashiro_option.author_name = "アタラヨ";
+  mashiro_option.site_url = "https://sakamodo1998.github.io/";
+  mashiro_option.v_appId = "mPk156zoohoyijKfqNhMro9W-MdYXbMMI";
+  mashiro_option.v_appKey = "uIdzMK9bnkmFSdl53pSkORk7";
+  mashiro_option.mathjax = "1";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/imgs/toppage/1.webp,https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/imgs/toppage/2.webp,https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/imgs/toppage/15.webp,https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/imgs/toppage/20.webp,https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/imgs/toppage/5.webp,https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/imgs/toppage/6.webp,https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/imgs/toppage/13.webp,https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/imgs/toppage/24.webp".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-grid">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://sakamodo1998.github.io/">
+          <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/indexpage/ada.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>We look for stranger things&#39;Cause that&#39;s just who we are</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://github.com/sakamodo1998" target="_blank" class="social-github" title="github">
+                    <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/icons/github.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://music.163.com/#/user/home?id=123684799" target="_blank" class="social-github" title="wangyiyun">
+                    <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/icons/wangyiyun.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://twitter.com/sakamodo1998" target="_blank" class="social-github" title="Twitter">
+                    <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/icons/twitter.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://www.instagram.com/_sakamodo_/" target="_blank" class="social-github" title="Ins">
+                    <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/icons/ins.png">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono"></span>
+            <span class="shironeko">アタラヨ</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/%E6%8A%80%E6%9C%AF/">
+                          <i class="fa fa-code faa-shake" aria-hidden="true"></i>
+                          技术
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E7%94%9F%E6%B4%BB/">
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          生活
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E8%B5%84%E6%BA%90/">
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          资源
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E9%9A%8F%E6%83%B3/">
+                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                          随想
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E8%BD%AC%E8%BD%BD/">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          转载
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E6%97%85%E8%A1%8C/">
+                          <i class="fa fa-mountain" aria-hidden="true"></i>
+                          旅行
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/books/">
+                          <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                          书单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/bangumi/">
+                          <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                          番组
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/music/">
+                          <i class="fa fa-headphones" aria-hidden="true"></i>
+                          歌单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/Spot/">
+                          <i class="fa fa-map-pin" aria-hidden="true"></i>
+                          想去
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    友人帐
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meh-blank" aria-hidden="true"></i>
+                          我
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/theme-sakura/">
+                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                          主题
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" href="/css/bangumi.css">
+<div class="pattern-center-blank"></div>
+<div id="content" class="site-content">
+  <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+    <header class="page-header"><h1 class="cat-title">番组计划</h1> <span class="cat-des"><p>这里将是永远的回忆</p> </span></header>
+    
+    <div class="bangumi">
+      <div class="row" id="rootRow">
+        
+          <div class="col s12 m6" id="bangumi-0">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(http://lain.bgm.tv/pic/cover/c/f2/fc/324_psuXk.jpg);" data-src="http://lain.bgm.tv/pic/cover/c/f2/fc/324_psuXk.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  攻殻機動隊 STAND ALONE COMPLEX<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                攻殻機動隊 STAND ALONE COMPLEX</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  攻殻機動隊 STAND ALONE COMPLEX<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  攻殻機動隊 STAND ALONE COMPLEX<br>
+                </span>
+                <span>
+                  放送时间: 2002年10月1日<span>
+                    <p>公元2030的世界，改造人、生化人、机器人等等的存在已经非常普及。主人公草薙素子正是人类最高科技的结晶：只有大脑是人脑，其余身体部分皆为机械装置，外表看起来则是一名美貌兼干练的年轻女性。在这个高科技的世界里，人类通过更换身体的各个部件而达到长寿已不是新鲜事，更有许多人的大脑也已经电脑化，从而真正实现所谓的“电子化的存在”(并非“信息化的存在”)。从庞大的社会结构直至单独的个人身体，都可方便的通过网络连接，构成了一个无比复杂的信息网络：这就是本作的世界基础。 虽然人类社会的电脑化带来很多方便，但是无论构造成为身体的材料怎样变化，人类毕竟还是拥有人性，因此各种以电脑为契机的犯罪层出不穷。日本的公安九课是一个高出统治阶层的存在，它的职能就是猎捕一切有关于高级电脑类刑事犯罪者。公安九课所面对的罪犯：有时可能是政府中的高官，有时可能是偷换他人大脑的投机分子，更有可能是身边的同伴；每一次的案件，都是对人类存在的再思考，都可能给队内的每一个队员带来沉重的精神压力。</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-1">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(http://lain.bgm.tv/pic/cover/c/a6/66/326_M9f1M.jpg);" data-src="http://lain.bgm.tv/pic/cover/c/a6/66/326_M9f1M.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  攻殻機動隊 S.A.C. 2nd GIG<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                攻殻機動隊 S.A.C. 2nd GIG</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  攻殻機動隊 S.A.C. 2nd GIG<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  攻殻機動隊 S.A.C. 2nd GIG<br>
+                </span>
+                <span>
+                  放送时间: 2004年1月1日<span>
+                    <p>间指向了2030年，自从爆发第四次世界大战以来，各国的政治力量发生了根本性的变化，由于战乱不断，激增的难民终于获准进入日本，以填补因经济不断发展造成的劳动力短缺。而就在此时，一个自称“个别的十一人”的恐怖组织展开了一系列极端袭击事件，难民营、外国领事馆、甚至是总理都遭到了恐怖袭击……难民抵抗运动的新领导人，同时也是“个别的十一人”的神秘前成员到底是谁？九课所掌握的众多线索也渐渐揭露了令人震惊的事实，在各种恐怖活动和突发事件的背后，有一人在阴影中操作着一切，他们策划的内幕是什么？九课能化解困境，并避免灾难性的内战吗？</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-2">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(http://lain.bgm.tv/pic/cover/c/3a/d6/125807_G4nVU.jpg);" data-src="http://lain.bgm.tv/pic/cover/c/3a/d6/125807_G4nVU.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  攻殻機動隊ARISE ALTERNATIVE ARCHITECTURE<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                攻殻機動隊ARISE ALTERNATIVE ARCHITECTURE</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    未完</div>
+                    <progress class="skill-1" max="100" value="10">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  攻殻機動隊ARISE ALTERNATIVE ARCHITECTURE<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  攻殻機動隊ARISE ALTERNATIVE ARCHITECTURE<br>
+                </span>
+                <span>
+                  放送时间: 2015年4月5日<span>
+                    <p>ARISE 4部剧场版的再剪辑（调整顺序）+2集完全新作，追加的2集（#9、#10）是2015年上映的电影「攻壳机动队 新剧场版」的铺垫剧情。</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        未完</div>
+                        <progress class="skill-1" max="100" value="10">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-3">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(http://lain.bgm.tv/pic/cover/c/70/5a/212610_5Urlr.jpg);" data-src="http://lain.bgm.tv/pic/cover/c/70/5a/212610_5Urlr.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  攻殻機動隊 SAC_2045<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                攻殻機動隊 SAC_2045</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  攻殻機動隊 SAC_2045<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  攻殻機動隊 SAC_2045<br>
+                </span>
+                <span>
+                  放送时间: 2020年4月23日<span>
+                    <p>2045年。全ての国家を震撼させる経済災害「全世界同時デフォルト」の発生と、AIの爆発的な進化により、世界は計画的且つ持続可能な戦争“サスティナブル・ウォー”へと突入した。だが人々が、AIによる人類滅亡への危機を日常レベルで実感できるまでには衰退の進んでいない近未来――。内戦・紛争を渡り歩き、廃墟が横たわるアメリカ大陸西海岸において、傭兵部隊として腕を奮っている全身義体のサイボーグ・草薙素子とバトーたち元・公安9課のメンバー。電脳犯罪やテロに対する攻性の組織に所属し、卓越した電脳・戦闘スキルを誇っていた彼女らにとって、この時代はまさにこの世の春である。そんな草薙率いる部隊の前に、“ポスト・ヒューマン”と呼ばれる驚異的な知能と身体能力を持つ存在が突如として現れる。彼らは如何にして生まれ、その目的とは。大国間の謀略渦巻くなか、いま再び“攻殻機動隊”が組織される――。</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-4">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/18/bc/207195_OOyqz.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/18/bc/207195_OOyqz.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  摇曳露营△<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                ゆるキャン△</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  摇曳露营△<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  ゆるキャン△<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月4日<span>
+                    <p>这是，某个冬日的故事。从静冈搬家到山梨的女高中生·抚子，为了观赏“在千圆纸币上都有图案的富士山”而骑着自行车来到本栖湖，但不巧天气是阴天。没能看到富士山，十分疲倦的抚子当场进入了梦乡。当她醒来的时候，时间已是深夜。在这初来乍到的地方，连回去的路都不知道。拯救了不安而害怕的抚子的是，一位爱好露营的女孩子·凛。为了让寒冷的身体取暖而点燃篝火的两人。噼啪噼啪的柴火爆音，沁入湖畔的静寂之中。围着篝火，一边啜着咖喱面一边对话的抚子和凛。终于，两人期盼已久的瞬间到来。“看到了……富士山……”抚子与凛，从这两人的相遇开始的户外系Girls Story。</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-5">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/37/08/204027_irnYl.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/37/08/204027_irnYl.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  齐木楠雄的灾难 第二季<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                斉木楠雄のΨ難 第2期</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  齐木楠雄的灾难 第二季<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  斉木楠雄のΨ難 第2期<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月16日<span>
+                    <p></p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-6">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/c7/3a/200589_ABfoB.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/c7/3a/200589_ABfoB.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  爆肝工程师的异世界狂想曲<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                デスマーチからはじまる異世界狂想曲</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  爆肝工程师的异世界狂想曲<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  デスマーチからはじまる異世界狂想曲<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月11日<span>
+                    <p>正在爆肝加班当中的程式设计师，游戏中名为“佐藤”的铃木一郎（29岁）。原本应该在小睡片刻的他，回过神竟发现自己被放逐到了陌生的异世界。连慌乱的闲暇都没有，一大群从未见过的怪物逼近眼前，流星雨自天空倾盆而降——然后转眼间，最强等级的力量和巨额财富都得手了。就这样，佐藤“温馨，时而严肃，并兼具后宫”的异世界冒险故事就此展开。</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-7">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/84/d8/221490_4pO1s.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/84/d8/221490_4pO1s.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  粗点心战争2<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                だがしかし2</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  粗点心战争2<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  だがしかし2<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月11日<span>
+                    <p>不愿继承家业粗点心店的鹿田九，与热爱粗点心的不可思议美少女·萤。萤为了让九继承粗点心店，而开始屡次造访店中。与萤一同度过的九顺利地前进在成为粗点心店长的道路上……是不是这样还不清楚，不过与友人远藤豆、远藤彩一同度过的愉快的暑假仍将继续！？献上实际存在的粗点心作为礼物，美味而令人怀念的粗点心喜剧！请再一次地尽情享用到饱！！</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-8">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/a9/23/146994_7SYIy.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/a9/23/146994_7SYIy.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  粗点心战争<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                だがしかし</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  粗点心战争<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  だがしかし<br>
+                </span>
+                <span>
+                  放送时间: 2016年1月7日<span>
+                    <p>位于日本超偏远地区的某家粗点心（古早味零食一类）店中，有一位梦想著成为漫画家的少年「鹿田九」，但他却被自己的父亲「鹿田洋」以半强迫的方式要求继承店面经营。此时一位拥有亮丽外表的千金大小姐「枝垂莹」突然登场，并透露出洋身为业界名人的事实。以此为契机，一连串环绕著这家小店的粗点心喜剧就此开演！</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-9">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/37/4a/212279_iG7S3.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/37/4a/212279_iG7S3.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  pop子和pipi美的日常<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                ポプテピピック</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  pop子和pipi美的日常<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  ポプテピピック<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月6日<span>
+                    <p>由于King Records的疏忽，电视动画和第三季同时展开的梦想土崩瓦解……。二人究竟能否在动画播出之前幸存下来……？</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-10">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/bf/97/214671_77174.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/bf/97/214671_77174.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  Slow Start<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                スロウスタート</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  Slow Start<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  スロウスタート<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月6日<span>
+                    <p>今年春天开始就要升入高中一年级的怕生女孩一之濑花名。她由于某种理由而与住在都市的双亲分别，来到表姐志温担任管理员的公寓“手鞠高地”（てまりハイツ）居住。在新的高中、新的每一天中所发生的，绝妙的种种邂逅。花名慢慢地向周围的人们敞开心扉，度过着愉快而闪耀的时间。像孩子一样欢闹、像大人一样心跳……可爱满溢、温暖心灵的悠然成长物语。</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-11">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/16/de/218708_jhZHz.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/16/de/218708_jhZHz.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  <i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                宇宙よりも遠い場所</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  <i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  宇宙よりも遠い場所<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月6日<span>
+                    <p>无论何时，我们的第一步总是从好奇心开始。不曾看过的风景，不曾听过的声音，不曾闻过的味道，不曾摸过的质感，不曾尝过的食物，以及不曾感受过的澎湃。为了重拾不知何时忘却的记忆碎片和不知何时舍弃的感动的旅途。在到达终点的时候，我们会想些什么呢？40度的咆哮，50度的疯狂，60度的呐喊，跨越荒芜的海源到达原生地域。在地球的天边，远离文明的南方尽头。这是向南极（比宇宙更远的地方）进发的四位女孩子的旅行物语。我们通过她们回想起生于明日的光辉！</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-12">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/83/52/211066_6cuj1.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/83/52/211066_6cuj1.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  三颗星彩色冒险<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                三ツ星カラーズ</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  三颗星彩色冒险<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  三ツ星カラーズ<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月7日<span>
+                    <p>默默坐落于上野的公园的秘密基地.在那里的是3位小学生少女——。没错，她们正是守护上野的正义组织“COLORS”！！结衣、小幸、琴叶3人今天也为了守护上野的和平，每日每夜(骗你的,只是到傍晚而已)在街上来回奔走！</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-13">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/58/d3/219658_Reey1.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/58/d3/219658_Reey1.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  龙王的工作！<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                りゅうおうのおしごと！</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  龙王的工作！<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  りゅうおうのおしごと！<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月8日<span>
+                    <p>龙王的狱友!</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-14">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/ee/3e/218440_NM2Wc.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/ee/3e/218440_NM2Wc.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  小木乃伊到我家<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                ミイラの飼い方</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  小木乃伊到我家<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  ミイラの飼い方<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月11日<span>
+                    <p>过着普通生活的男高中生·柏木空，某天突然收到了在埃及旅行的自称“冒险家”的父亲送来的木乃伊。“发现了有趣的木乃伊，就先交给你了！”面对父亲如此写下的信，不由得发抖的空。但，从送来的巨大棺材里出现的，竟然是全长12cm！？手掌大小的木乃伊……。不仅尺寸小，还很胆小、爱哭，却有着说不出来的可爱，空给这样的木乃伊起名为小伊，并开始照顾它。在同一屋檐下开始一起生活，空和小伊的共同生活究竟会……。</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-15">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://lain.bgm.tv/pic/cover/c/cf/7f/212146_t70sp.jpg);" data-src="https://lain.bgm.tv/pic/cover/c/cf/7f/212146_t70sp.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  爱吃拉面的小泉同学<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                ラーメン大好き小泉さん</p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  爱吃拉面的小泉同学<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  ラーメン大好き小泉さん<br>
+                </span>
+                <span>
+                  放送时间: 2018年1月4日<span>
+                    <p>今天，她也在某处享用着拉面——冷淡而沉默，不和他人亲近的神秘转学生，小泉同学。她其实是每天追求着美味拉面的拉面专家……！？正统的拉面绘卷，就此上桌！</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+    
+  </article>
+</div>
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 Sakamodo<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+      <p style="color: #666666;">&copy 2021</p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Github Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+  
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=58xb8bh0w3f&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<!-- 不蒜子 网页计数器 -->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+    <!-- 背景动态线条 -->
+    <!script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/piao.js"></script>
+    <!-- 背景动态线条指针跟随 -->
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script>
+    <!-- 樱花飘落效果 -->
+    <!script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>
+    <!-- 雪花飘落效果1 -->
+    <!script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehuapiaoluo.js"></script>
+    <!-- 鼠标点击气球爆炸 -->
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js"></script>
+  </section>
+  
+  <!-- 实现换肤功能 -->
+  <div class="skin-menu no-select" id="mainskin" style="position: fixed">
+ <div class="theme-controls row-container">
+  <ul class="menu-list">
+   <li id="white-bg"> <i class="fa fa-television" aria-hidden="true"></i></li>
+   <li id="sakura-bg"> <i class="iconfont icon-sakura"></i></li>
+   <li id="gribs-bg"> <i class="fa fa-slack" aria-hidden="true"></i></li>
+   <li id="KAdots-bg"> <i class="iconfont icon-dots"></i></li>
+   <li id="totem-bg"> <i class="fa fa-square" aria-hidden="true"></i></li>
+   <li id="pixiv-bg"> <i class="iconfont icon-pixiv"></i></li>
+   <li id="bing-bg"> <i class="iconfont icon-bing"></i></li>
+   <li id="dark-bg"> <i class="fa fa-moon-o" aria-hidden="true"></i></li>
+  </ul>
+ </div>
+</div>
+<canvas id="night-mode-cover"></canvas>
+ 
+  <div class="changeSkin-gear no-select">
+  <div class="keys" id="setbtn"> 
+   <span id="open-skinMenu"> 切换主题 | SCHEME TOOL  
+     <i class="iconfont icon-gear inline-block rotating"></i> 
+   </span>
+  </div>
+</div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    id="7204042133"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.2"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/indexpage/ada.jpg">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">アタラヨ</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="https://github.com/sakamodo1998" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
+      
+        <a href="https://weibo.com/SAKAMODO1998?is_all=1" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
+      
+        <a href="https://twitter.com/sakamodo1998" class="fa fa-twitter" target="_blank" style="color: #2ee8e8; margin-left:20px"></a>
+      
+        <a href="https://www.instagram.com/_sakamodo_/" class="fa fa-instagram" target="_blank" style="color: #e82eb3; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/%E6%8A%80%E6%9C%AF/">
+                  <i class="fa fa-code faa-shake" aria-hidden="true"></i>
+                  技术
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/%E7%94%9F%E6%B4%BB/">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  生活
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/%E8%B5%84%E6%BA%90/">
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                  资源
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/%E9%9A%8F%E6%83%B3/">
+                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                  随想
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/%E8%BD%AC%E8%BD%BD/">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                  转载
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/%E6%97%85%E8%A1%8C/">
+                  <i class="fa fa-mountain" aria-hidden="true"></i>
+                  旅行
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/books/">
+                  <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                  书单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/bangumi/">
+                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                  番组
+                </a>
+              </li>
+            
+              <li>
+                <a href="/music/">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  歌单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/Spot/">
+                  <i class="fa fa-map-pin" aria-hidden="true"></i>
+                  想去
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+            友人帐
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meh-blank" aria-hidden="true"></i>
+                  我
+                </a>
+              </li>
+            
+              <li>
+                <a href="/theme-sakura/">
+                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                  主题
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+<!--
+  
+-->  
+
+<!-- 预加载 -->
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+
+</body>
+</html>
