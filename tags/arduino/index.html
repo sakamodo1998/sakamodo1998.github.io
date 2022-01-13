@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">配置本地git的用户名密码以及ssh | アタラヨ</title>
+  <title itemprop="name">Tag: arduino | アタラヨ</title>
   
     <link rel="shortcut icon" href="/imgs/indexpage/favicon.jpg">
   
@@ -348,203 +348,64 @@ body{
   </div>
 </header>
 
-      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+      
 <div class="pattern-center-blank"></div>
-
-  <div class="pattern-center single-center">
-    <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://s2.loli.net/2022/01/12/2x4GSZjm3rPUI5L.png);" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.loli.net/2022/01/12/2x4GSZjm3rPUI5L.png">
-    </div>
-    <header class="pattern-header single-header">
-      <h1 class="entry-title">
-      配置本地git的用户名密码以及ssh</h1>
-      <p class="entry-census">
-        <span>
-          <a href="atarayo.xyz">
-            <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0306/imgs/indexpage/ada.jpg">
-          </a>
-        </span>
-        <span>
-          <a href="atarayo.xyz">Sakamodo</a>
-        </span>
-        <span class="bull">
-        ·</span>
-        2022-1-12<span class="bull">
-        ·</span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
-    </header>
+<div class="pattern-center ">
+  <div class="pattern-attachment-img">
+    <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="arduino.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
   </div>
-
+  <header class="pattern-header ">
+    <h1 class="cat-title">arduino</h1>
+  </header>
+</div>
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
-        <div class="entry-content">
-          <blockquote>
-<p><a target="_blank" rel="noopener" href="https://atarayo.xyz/2022/01/11/2022-01-11%E7%94%A8git%E5%A4%87%E4%BB%BD%E6%9C%AC%E5%9C%B0%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%96%B9%E6%B3%95/">上一篇</a>配置了云端和本地的git环境,但是存在私有库每次操作都需要输入密码的问题.可以通过在个人的电脑上配置好凭据以省略此步骤以使得体验更加丝滑</p>
-</blockquote>
-<p> <b><font size="6"><div align="center"><span style="color:red;">注意:以下内容只能在可以信赖的电脑上操作</span></div></font></b></p>
-<h1 id="设置用户名密码"><a href="#设置用户名密码" class="headerlink" title="设置用户名密码:"></a>设置用户名密码:</h1><h2 id="全局设置的情况"><a href="#全局设置的情况" class="headerlink" title="全局设置的情况:"></a>全局设置的情况:</h2><p>全局设置即为此电脑的所有仓库默认使用这套信息<br>在仓库文件夹里右键git bash here,输入以下代码</p>
-<pre><code class="bat">git config --global user.name &quot;用户名&quot;
-git config --global user.password &quot;密码&quot;
-git config --global user.email &quot;邮箱&quot;
-</code></pre>
-<h2 id="个别仓库设置的情况"><a href="#个别仓库设置的情况" class="headerlink" title="个别仓库设置的情况"></a>个别仓库设置的情况</h2><p>需要个别设置的时候只需去掉 <code>--global</code> 选项即可<br>在需要更改的仓库文件里giy bash here,输入</p>
-<pre><code>git config user.name &quot;用户名&quot;
-git config user.password &quot;密码&quot;
-git config user.email &quot;邮箱&quot;
-</code></pre>
-<h1 id="设置ssh"><a href="#设置ssh" class="headerlink" title="设置ssh"></a>设置ssh</h1><h2 id="生成一串新秘钥"><a href="#生成一串新秘钥" class="headerlink" title="生成一串新秘钥"></a>生成一串新秘钥</h2><p>打开Git Bash,输入</p>
-<pre><code>ssh-keygen -t rsa -C &quot;邮箱&quot;
-</code></pre>
-<p>回车后系统会说</p>
-<pre><code>$ ssh-keygen -t rsa
-Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/(username)/.ssh/id_rsa):
-</code></pre>
-<p>此时回车,新生成的key便保存在默认路径里,然后系统说</p>
-<pre><code>Enter passphrase (empty for no passphrase):
-</code></pre>
-<p>此时两下回车以不设置密码<br>之后会出来一大串信息,最后附带一张写着SHA256的图就说明生成成功了<br>接下来需要找到并复制生成的SSH key<br>打开</p>
-<pre><code>C:\Users\本机用户名\.ssh
-</code></pre>
-<p>本机用户名搞不清楚的话可以看下git bash里下图框住的部分就是本机用户名<br><img src="https://s2.loli.net/2022/01/12/KhkRG1LD3valNrI.png"></p>
-<p>进入文件以后会看到如下两个文件<br><img src="https://s2.loli.net/2022/01/12/SRTImGO9uMXli26.png"><br>其中<code>id_rsa</code>是私钥,不能给别人看,<code>id_rsa.pub</code>是公钥,需要告诉ssh服务器的.<br>右键用记事本打开<code>id_rsa.pub</code>并复制全文.</p>
-<h2 id="在github添加秘钥"><a href="#在github添加秘钥" class="headerlink" title="在github添加秘钥"></a>在github添加秘钥</h2><p>打开github点右上角头像后下拉菜单点<code>settings</code><br><img src="https://s2.loli.net/2022/01/12/PTYFS6s9wbhfgit.png"><br>在设置页面里依次点<code>SSH and GPG keys</code>和<code>New SSH key</code><br><img src="https://s2.loli.net/2022/01/12/oEqD9byxJXeVMYZ.png"><br>然后在把刚才复制的公钥粘到Key里,再在Tittle里填个好听的名字,最后点下面的<code>Add SSH key</code>就成了<br><img src="https://s2.loli.net/2022/01/12/UhJFNO1GrKZXL6T.png"></p>
-<p>最后回来git bash确认一下一切是否都设置好了<br>输入</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>回车后如果看到电脑跟你say Hi的话就配置成功了<br><img src="https://s2.loli.net/2022/01/12/Zxqn5paoAKYjTwE.png"><br>理论上这些设置完成之后再上传或克隆文件时就算是私有库也能跳过输用户名密码的环节了.好耶!</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><del>秘钥的读音是”秘药”但是不知道为什么总是会读成”秘尺”</del></p>
-
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏
-            <div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/dona/alipay.jpg"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/dona/wechatpay.jpg"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2022/01/13/2022-01-13mac%E5%AE%89%E8%A3%85arduinoIDE%E5%B9%B6%E8%B0%83%E8%AF%95%E7%BB%A7%E7%94%B5%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.loli.net/2022/01/13/2VNbsafCoT1yQnv.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://s2.loli.net/2022/01/13/2VNbsafCoT1yQnv.png">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                mac安装arduinoIDE并调试继电器的方法</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2022/01/11/2022-01-11%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E7%BD%91%E7%AB%99%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8F%82%E8%80%83/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0308/imgs/toppage/10.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0308/imgs/toppage/10.jpg">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                一些关于网站的技术参考</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
       
-<div id="vcomments"></div>
-<script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        appId: "mPk156zoohoyijKfqNhMro9W-MdYXbMMI",
-        appKey: "uIdzMK9bnkmFSdl53pSkORk7",
-        path: window.location.pathname,
-        placeholder: "We looked for stranger things Cause thats just who we are"
-      })
-  }
-</script>
-
-
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="atarayo.xyz" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0306/imgs/indexpage/ada.jpg" itemprop="image" alt="Sakamodo" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="atarayo.xyz" itemprop="url" rel="author">Sakamodo</a>
-            </h3>
-          </div>
+  <!-- 首页默认取最最新文章集 -->
+  
+    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
+  <div class="post-entry">
+    <div class="feature">
+      <a href="/2022/01/13/2022-01-13mac%E5%AE%89%E8%A3%85arduinoIDE%E5%B9%B6%E8%B0%83%E8%AF%95%E7%BB%A7%E7%94%B5%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
         </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i>受控碳基系统</p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
+        <img width="150" height="150" src="https://s2.loli.net/2022/01/13/2VNbsafCoT1yQnv.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
+      </a>
+    </div>
+    <h1 class="entry-title">
+    <a href="/2022/01/13/2022-01-13mac%E5%AE%89%E8%A3%85arduinoIDE%E5%B9%B6%E8%B0%83%E8%AF%95%E7%BB%A7%E7%94%B5%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/">
+    mac安装arduinoIDE并调试继电器的方法</a>
+    </h1>
+    <div class="p-time">
+      <i class="iconfont icon-time">
+      </i>
+    2022-1-13</div>
+    <p>
+    关于人感继电器的调试方法</p>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="/2022/01/13/2022-01-13mac%E5%AE%89%E8%A3%85arduinoIDE%E5%B9%B6%E8%B0%83%E8%AF%95%E7%BB%A7%E7%94%B5%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <hr>
+</article>
+  
+
+
+      <div class="clearer">
+      </div>
+    </main>
+    <!--  -->
+    
+  </div>
 </div>
-
-<!-- 开始添加字数统计-->
-
-  <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <!-- 安装插件npm install hexo-wordcount --save -->
-        <span class="post-count">657字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">2分</span>
-      </span>
-    </span>
-</div>
-
-
-<!-- 添加完成 -->
-
-
-
-
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>

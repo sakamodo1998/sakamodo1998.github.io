@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">配置本地git的用户名密码以及ssh | アタラヨ</title>
+  <title itemprop="name">mac安装arduinoIDE并调试继电器的方法 | アタラヨ</title>
   
     <link rel="shortcut icon" href="/imgs/indexpage/favicon.jpg">
   
@@ -354,11 +354,11 @@ body{
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://s2.loli.net/2022/01/12/2x4GSZjm3rPUI5L.png);" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.loli.net/2022/01/12/2x4GSZjm3rPUI5L.png">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://s2.loli.net/2022/01/13/2VNbsafCoT1yQnv.png);" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.loli.net/2022/01/13/2VNbsafCoT1yQnv.png">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      配置本地git的用户名密码以及ssh</h1>
+      mac安装arduinoIDE并调试继电器的方法</h1>
       <p class="entry-census">
         <span>
           <a href="atarayo.xyz">
@@ -370,7 +370,7 @@ body{
         </span>
         <span class="bull">
         ·</span>
-        2022-1-12<span class="bull">
+        2022-1-13<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -384,42 +384,19 @@ body{
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <blockquote>
-<p><a target="_blank" rel="noopener" href="https://atarayo.xyz/2022/01/11/2022-01-11%E7%94%A8git%E5%A4%87%E4%BB%BD%E6%9C%AC%E5%9C%B0%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%96%B9%E6%B3%95/">上一篇</a>配置了云端和本地的git环境,但是存在私有库每次操作都需要输入密码的问题.可以通过在个人的电脑上配置好凭据以省略此步骤以使得体验更加丝滑</p>
+          <h1 id="安装Arduino-IDE"><a href="#安装Arduino-IDE" class="headerlink" title="安装Arduino IDE"></a>安装Arduino IDE</h1><p>跟着这个教程安装Arduino IDE<br><a target="_blank" rel="noopener" href="https://www.arduino.cc/en/Guide/macOS">https://www.arduino.cc/en/Guide/macOS</a></p>
+<h1 id="打开代码文件"><a href="#打开代码文件" class="headerlink" title="打开代码文件"></a>打开代码文件</h1><p>插上数据线然后打开工程文件里的<code>Ren_Gan_Sensor.ino</code><br><img src="https://s2.loli.net/2022/01/13/LqzpAPrjSfv7onK.png"></p>
+<h1 id="选择开发板"><a href="#选择开发板" class="headerlink" title="选择开发板"></a>选择开发板</h1><p>设置开发板:<br>依次点击<code>工具</code>→<code>开发板</code>→<code>Arduino Nano</code><br><img src="https://s2.loli.net/2022/01/13/JqwVLY4aKfC3ph2.png"></p>
+<h1 id="选择端口"><a href="#选择端口" class="headerlink" title="选择端口"></a>选择端口</h1><p>依次点<code>工具</code>→<code>端口</code>→<code>COM??</code><br>选哪个COM可以先把USB把下来看一眼都有哪些COM,然后再把USB插上看多出来哪个COM就点哪个<br><img src="https://s2.loli.net/2022/01/13/KsoTd2fbzWBeVGN.png"></p>
+<h1 id="输入时间"><a href="#输入时间" class="headerlink" title="输入时间"></a>输入时间</h1><p>把下图红框里的数字改成需要的秒数<br>注意数字的前后需要有一个空格<br>双横线一下的部分不用动<br><img src="https://s2.loli.net/2022/01/13/w6ocdjmZkLr78gn.png"></p>
+<h1 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h1><p>点红框里的画箭头的按钮就能把更改保存到硬件里了<br><img src="https://s2.loli.net/2022/01/13/OfBZnk2oRWQjEVY.png"></p>
+<p>等下面显示上传成功就上传成功<br><img src="https://s2.loli.net/2022/01/13/5NCv3Q2umRlkhqS.png"></p>
+<hr>
+<blockquote>
+<p>第一次按照步骤搞到上传之后再调试改时间只要重复 <code>输入时间</code> 和<code>上传</code>的地方就行,如果显示上传失败的话可以看一下<code>选择端口</code>是不是有问题</p>
 </blockquote>
-<p> <b><font size="6"><div align="center"><span style="color:red;">注意:以下内容只能在可以信赖的电脑上操作</span></div></font></b></p>
-<h1 id="设置用户名密码"><a href="#设置用户名密码" class="headerlink" title="设置用户名密码:"></a>设置用户名密码:</h1><h2 id="全局设置的情况"><a href="#全局设置的情况" class="headerlink" title="全局设置的情况:"></a>全局设置的情况:</h2><p>全局设置即为此电脑的所有仓库默认使用这套信息<br>在仓库文件夹里右键git bash here,输入以下代码</p>
-<pre><code class="bat">git config --global user.name &quot;用户名&quot;
-git config --global user.password &quot;密码&quot;
-git config --global user.email &quot;邮箱&quot;
-</code></pre>
-<h2 id="个别仓库设置的情况"><a href="#个别仓库设置的情况" class="headerlink" title="个别仓库设置的情况"></a>个别仓库设置的情况</h2><p>需要个别设置的时候只需去掉 <code>--global</code> 选项即可<br>在需要更改的仓库文件里giy bash here,输入</p>
-<pre><code>git config user.name &quot;用户名&quot;
-git config user.password &quot;密码&quot;
-git config user.email &quot;邮箱&quot;
-</code></pre>
-<h1 id="设置ssh"><a href="#设置ssh" class="headerlink" title="设置ssh"></a>设置ssh</h1><h2 id="生成一串新秘钥"><a href="#生成一串新秘钥" class="headerlink" title="生成一串新秘钥"></a>生成一串新秘钥</h2><p>打开Git Bash,输入</p>
-<pre><code>ssh-keygen -t rsa -C &quot;邮箱&quot;
-</code></pre>
-<p>回车后系统会说</p>
-<pre><code>$ ssh-keygen -t rsa
-Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/(username)/.ssh/id_rsa):
-</code></pre>
-<p>此时回车,新生成的key便保存在默认路径里,然后系统说</p>
-<pre><code>Enter passphrase (empty for no passphrase):
-</code></pre>
-<p>此时两下回车以不设置密码<br>之后会出来一大串信息,最后附带一张写着SHA256的图就说明生成成功了<br>接下来需要找到并复制生成的SSH key<br>打开</p>
-<pre><code>C:\Users\本机用户名\.ssh
-</code></pre>
-<p>本机用户名搞不清楚的话可以看下git bash里下图框住的部分就是本机用户名<br><img src="https://s2.loli.net/2022/01/12/KhkRG1LD3valNrI.png"></p>
-<p>进入文件以后会看到如下两个文件<br><img src="https://s2.loli.net/2022/01/12/SRTImGO9uMXli26.png"><br>其中<code>id_rsa</code>是私钥,不能给别人看,<code>id_rsa.pub</code>是公钥,需要告诉ssh服务器的.<br>右键用记事本打开<code>id_rsa.pub</code>并复制全文.</p>
-<h2 id="在github添加秘钥"><a href="#在github添加秘钥" class="headerlink" title="在github添加秘钥"></a>在github添加秘钥</h2><p>打开github点右上角头像后下拉菜单点<code>settings</code><br><img src="https://s2.loli.net/2022/01/12/PTYFS6s9wbhfgit.png"><br>在设置页面里依次点<code>SSH and GPG keys</code>和<code>New SSH key</code><br><img src="https://s2.loli.net/2022/01/12/oEqD9byxJXeVMYZ.png"><br>然后在把刚才复制的公钥粘到Key里,再在Tittle里填个好听的名字,最后点下面的<code>Add SSH key</code>就成了<br><img src="https://s2.loli.net/2022/01/12/UhJFNO1GrKZXL6T.png"></p>
-<p>最后回来git bash确认一下一切是否都设置好了<br>输入</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>回车后如果看到电脑跟你say Hi的话就配置成功了<br><img src="https://s2.loli.net/2022/01/12/Zxqn5paoAKYjTwE.png"><br>理论上这些设置完成之后再上传或克隆文件时就算是私有库也能跳过输用户名密码的环节了.好耶!</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><del>秘钥的读音是”秘药”但是不知道为什么总是会读成”秘尺”</del></p>
+<hr>
+<p>另外:<br>Arduino nano的USB型号是<code>USB Mini-B</code>,<br>长这样,记得买能数据传输的<br><img src="https://s2.loli.net/2022/01/13/gHm73ZyjPA6UlJI.png"></p>
 
         </div>
         <!-- .entry-content -->
@@ -448,36 +425,19 @@ Enter file in which to save the key (/Users/(username)/.ssh/id_rsa):
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2022/01/13/2022-01-13mac%E5%AE%89%E8%A3%85arduinoIDE%E5%B9%B6%E8%B0%83%E8%AF%95%E7%BB%A7%E7%94%B5%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.loli.net/2022/01/13/2VNbsafCoT1yQnv.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://s2.loli.net/2022/01/13/2VNbsafCoT1yQnv.png">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                mac安装arduinoIDE并调试继电器的方法</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
-            <a href="/2022/01/11/2022-01-11%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E7%BD%91%E7%AB%99%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8F%82%E8%80%83/" rel="next">
+            <a href="/2022/01/12/2022-01-12%E9%85%8D%E7%BD%AE%E6%9C%AC%E5%9C%B0git%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D%E5%AF%86%E7%A0%81%E4%BB%A5%E5%8F%8Assh/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0308/imgs/toppage/10.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0308/imgs/toppage/10.jpg">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.loli.net/2022/01/12/2x4GSZjm3rPUI5L.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://s2.loli.net/2022/01/12/2x4GSZjm3rPUI5L.png">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                一些关于网站的技术参考</h3>
+                配置本地git的用户名密码以及ssh</h3>
                 <hr>
               </div>
             </a>
@@ -525,7 +485,7 @@ Enter file in which to save the key (/Users/(username)/.ssh/id_rsa):
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
         <!-- 安装插件npm install hexo-wordcount --save -->
-        <span class="post-count">657字</span>
+        <span class="post-count">276字</span>
       </span>
     </span>
 
@@ -534,7 +494,7 @@ Enter file in which to save the key (/Users/(username)/.ssh/id_rsa):
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">2分</span>
+        <span class="post-count">1分</span>
       </span>
     </span>
 </div>

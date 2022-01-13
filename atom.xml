@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sakamodo1998.github.io/"/>
-  <updated>2022-01-12T08:31:12.944Z</updated>
+  <updated>2022-01-13T14:35:12.166Z</updated>
   <id>https://sakamodo1998.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac安装arduinoIDE并调试继电器的方法</title>
+    <link href="https://sakamodo1998.github.io/2022/01/13/2022-01-13mac%E5%AE%89%E8%A3%85arduinoIDE%E5%B9%B6%E8%B0%83%E8%AF%95%E7%BB%A7%E7%94%B5%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://sakamodo1998.github.io/2022/01/13/2022-01-13mac安装arduinoIDE并调试继电器的方法/</id>
+    <published>2022-01-13T14:02:53.000Z</published>
+    <updated>2022-01-13T14:35:12.166Z</updated>
+    
+    <summary type="html">
+    
+      关于人感继电器的调试方法
+    
+    </summary>
+    
+      <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="arduino" scheme="https://sakamodo1998.github.io/tags/arduino/"/>
+    
+  </entry>
   
   <entry>
     <title>配置本地git的用户名密码以及ssh</title>
