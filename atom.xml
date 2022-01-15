@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sakamodo1998.github.io/"/>
-  <updated>2022-01-13T14:35:12.166Z</updated>
+  <updated>2022-01-15T07:06:01.225Z</updated>
   <id>https://sakamodo1998.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于FeliCa的调查</title>
+    <link href="https://sakamodo1998.github.io/2022/01/15/2022-01-15%E5%85%B3%E4%BA%8EFeliCa%E7%9A%84%E8%B0%83%E6%9F%A5/"/>
+    <id>https://sakamodo1998.github.io/2022/01/15/2022-01-15关于FeliCa的调查/</id>
+    <published>2022-01-15T06:59:44.000Z</published>
+    <updated>2022-01-15T07:06:01.225Z</updated>
+    
+    <summary type="html">
+    
+      调查汇总了关于Felice的一些信息
+    
+    </summary>
+    
+      <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="FeliCa" scheme="https://sakamodo1998.github.io/tags/FeliCa/"/>
+    
+      <category term="NFC" scheme="https://sakamodo1998.github.io/tags/NFC/"/>
+    
+  </entry>
   
   <entry>
     <title>mac安装arduinoIDE并调试继电器的方法</title>
