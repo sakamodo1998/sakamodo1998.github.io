@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sakamodo1998.github.io/"/>
-  <updated>2022-01-15T07:29:26.657Z</updated>
+  <updated>2022-02-17T16:25:54.153Z</updated>
   <id>https://sakamodo1998.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>potplayer+IDM 用potplayer播放Youtube的方法</title>
+    <link href="https://sakamodo1998.github.io/2022/02/18/2022-02-18potplayer+IDM%20%E7%94%A8potplayer%E6%92%AD%E6%94%BEYoutube%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://sakamodo1998.github.io/2022/02/18/2022-02-18potplayer+IDM 用potplayer播放Youtube的方法/</id>
+    <published>2022-02-17T16:07:41.000Z</published>
+    <updated>2022-02-17T16:25:54.153Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;为了在做工的时候开个画中画摸鱼,研究了一下用potplayer播放youtube的视频的方法.&lt;br&gt;看了一些网友的讨论之后发现以前貌似直接ctrlC
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="potplayer" scheme="https://sakamodo1998.github.io/tags/potplayer/"/>
+    
+      <category term="IDM" scheme="https://sakamodo1998.github.io/tags/IDM/"/>
+    
+  </entry>
   
   <entry>
     <title>关于FeliCa的调查</title>
@@ -134,9 +162,9 @@
       <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="cmd" scheme="https://sakamodo1998.github.io/tags/cmd/"/>
-    
       <category term="git" scheme="https://sakamodo1998.github.io/tags/git/"/>
+    
+      <category term="cmd" scheme="https://sakamodo1998.github.io/tags/cmd/"/>
     
   </entry>
   
