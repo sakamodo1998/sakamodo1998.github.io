@@ -384,7 +384,7 @@ body{
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>想把家里的红外设备也都接入到只能家居的服务器里,于是用树莓派搞了个红外发射和接受的装置.尝试了下灯和电风扇的遥控都一发成功,但是到空调的时候发现学习到的红外信号异常的长.灯的遥控器的情况把所有按键都学习一遍然后按需播放就可以,但是空调的红外信号动辄几百上千个元素<img src="https://s2.loli.net/2022/08/12/jpCezyFrVUn8GN5.png">,直接暴力学习的话完全不现实.于是就尝试着解析了一下自家空调的红外信号的编码方式.<strong>俗话(工程控制论, 宋健 p1 (1980))说的好</strong></p>
+          <h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>想把家里的红外设备也都接入到只能家居的服务器里,于是用树莓派搞了个红外发射和接受的装置.尝试了下灯和电风扇的遥控都一发成功,但是到空调的时候发现学习到的红外信号异常的长.灯的遥控器的情况把所有按键都学习一遍然后按需播放就可以,但是空调的红外信号动辄几百上千个元素(因为每次送信需要把所有的情报全送出去)<img src="https://s2.loli.net/2022/08/12/jpCezyFrVUn8GN5.png">,直接暴力学习的话完全不现实.于是就尝试着解析了一下自家空调的红外信号的编码方式.<strong>俗话(工程控制论, 宋健 p1 (1980))说的好</strong></p>
 <blockquote>
 <p>仅仅有了生产实践,而没有把实践中具有共性的东西抽象出来,理论还不能形成.</p>
 </blockquote>
@@ -417,10 +417,9 @@ for i=1:2:(sizeair(2)-1)
     j=j+1;
 end
 </code></pre>
-<p>之后把得到的代码稍加整理便可得到下节所示的二进制代码.</p>
-<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>把得到的二进制数组按byte分行可得</p>
+<p>之后把得到的代码稍加整理便可得到下节所示的二进制代码</p>
 <pre><code class="matlab"> 1st:
-LINE   LOWER &lt;-------&gt; UPPER
+DATA   LOWER &lt;-------&gt; UPPER
  0       1,0,0,0,  1,0,0,0  Customer Code -
  1       0,1,0,1,  1,0,1,1                |
  2       1,1,1,0,  0,1,0,0  Check SUM -----
@@ -430,41 +429,44 @@ LINE   LOWER &lt;-------&gt; UPPER
  6       0,0,0,0,  0,0,0,0,
  7       0,0,0,0,  0,0,0,0,
  8       0,0,0,0,  0,0,0,0,
- 9       1,0,1,1,  0,0,0,0,  Mode Name (0x0D:AUTO)
+ 9       1,0,1,1,  0,0,0,0,  Mode (0x0D:AUTO)
  10      0,0,0,0,  0,0,0,0,
- 11      0,0,0,0,  0,0,0,0,  Last bit =1:stop other:Run
- 12      0,0,0,0,  0,0,0,0,  Last 4bit:Windway , 0:Auto, 1=upper~5=down
+ 11      0,0,0,0,  0,0,0,0,  
+ 12      0,0,0,0,  0,0,0,0,  
  13      0,0,0,0,  0,0,0,0,
  14      0,0,0,0,  1,0,0,0,  
  15      0,0,0,0,  0,0,0,0,
  16      0,0,0,0,  0,0,0,0,
  17      0,0,0,0,  0,0,0,0,
  18      0,0,0,0,  0,0,0,0,
- 19      1,0,0,0,  1,1,0,0  CheckSUM: SUM(LINE 0~18),lower8bit
+ 19      1,0,0,0,  1,1,0,0   CHECKSUM
 
  2nd:
-LINE   LOWER &lt;-------&gt; UPPER
+DATA   LOWER &lt;-------&gt; UPPER
  0       1,0,0,0,  1,0,0,0  Customer Code -
  1       0,1,0,1,  1,0,1,1                |
  2       1,1,1,0,  0,1,0,0  Check SUM -----
  3       0,0,0,0,  0,0,0,0
  4       0,0,0,0,  0,0,0,0
- 5       1,0,0,1,  0,0,0,0 Work State &amp; timer &amp; Mode
- 6       0,1,0,1,  1,0,1,1 Temp Setting
+ 5       1,0,0,1,  0,0,0,0 
+ 6       0,1,0,1,  1,0,1,1 Temp 
  7       0,0,0,0,  0,0,0,1
  8       1,1,1,1,  0,1,0,1 
  9       0,0,0,0,  0,0,0,0
- 10      0,0,0,0,  0,0,0,0  Timer-
- 11      0,1,1,0,  0,0,0,0       |
- 12      0,0,0,0,  0,1,1,0  ------
+ 10      0,0,0,0,  0,0,0,0 
+ 11      0,1,1,0,  0,0,0,0 
+ 12      0,0,0,0,  0,1,1,0  
  13      0,0,0,0,  0,0,0,0
  14      0,0,0,0,  0,0,0,0
  15      1,1,0,0,  0,0,1,1
  16      0,0,0,0,  0,0,0,0
  17      0,0,0,0,  0,0,0,0
- 18      1,0,1,1,  0,0,1,0
+ 18      1,0,1,1,  0,0,1,0 CHECKSUM
 </code></pre>
-<p>其中各个部分的功能经过实验得到了和EH500_Kintarou同样的结论,但是需注意的是,<strong>在第一波数据的第14byte的最高位,我的遥控器不论使用什么模式那一位都是0</strong>,怀疑可能是笔误或者是遥控器型号不同的问题.</p>
+<p>其中各个部分的功能经过实验得到了和EH500_Kintarou同样的结论,但是需注意的是,==<strong>在第一波数据的第14byte的最高位,我的遥控器不论使用什么模式那一位都是0</strong>==,怀疑可能是笔误或者是遥控器型号不同的问题.</p>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>各个DATA内容以及编码方式如下表所示.<br>要注意的是因为送信时是先送低位再送高位所以计算编码时需要把要送信的数据左右反转,表三中的各个KEY Code是已反转后的值.<br><em>下表主要引用自<a target="_blank" rel="noopener" href="https://days-of-programming.blogspot.com/2018/09/blog-post.html">ダイキンのエアコンのリモコンを解析する</a>,由博主进行过翻译和修改.</em></p>
+<p><img src="https://s2.loli.net/2022/08/15/xOkNAmU1doPGbyf.png"><br><img src="https://s2.loli.net/2022/08/15/8vdbsZqTzp9S7X2.png"><br><img src="https://s2.loli.net/2022/08/15/4g5w2vUTSPXCJp8.png"></p>
+<h1 id="展望"><a href="#展望" class="headerlink" title="展望"></a>展望</h1><p>搞清楚了遥控器的编码方式之后下一步就要搞个程序实现自动编码和控制了.考虑到红外不像wifi,LED和机器的接收器之间不能有障碍物,所以作为服务器运行,摆放位置受限的树莓派无法直接作为发射器使用.所以考虑使用ESP8266搞一个发射器,再加上DHT11就可以顺便监控一下温湿度,使用电池供电以可以直接贴在墙上,最后通过MQTT接入家庭的网络.<br>然后就是如何编码的问题了,目标模式温度风向可以通过树莓派发送,然后再ESP8266里理论上只要修改上表里灰色的部分就行,而且理论上开关是在服务器里判断,所以timer也可以固定成常关的状态.感觉能成.</p>
 <hr>
 <h1 id="APPENDIX"><a href="#APPENDIX" class="headerlink" title="APPENDIX"></a>APPENDIX</h1><p>[1] <a target="_blank" rel="noopener" href="https://days-of-programming.blogspot.com/2018/09/blog-post.html">ダイキンのエアコンのリモコンを解析する</a>, EH500_Kintarou</p>
 <p>[2] <a target="_blank" rel="noopener" href="http://elm-chan.org/docs/ir_format.html">赤外線リモコンの通信フォーマット</a>, elm-chan.org</p>
@@ -556,7 +558,7 @@ LINE   LOWER &lt;-------&gt; UPPER
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
         <!-- 安装插件npm install hexo-wordcount --save -->
-        <span class="post-count">2.2k字</span>
+        <span class="post-count">2.5k字</span>
       </span>
     </span>
 
@@ -565,7 +567,7 @@ LINE   LOWER &lt;-------&gt; UPPER
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">10分</span>
+        <span class="post-count">11分</span>
       </span>
     </span>
 </div>
