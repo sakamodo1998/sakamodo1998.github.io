@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">donate | アタラヨ</title>
+  <title itemprop="name">2023-04-02树莓派远程访问的两种方法 | アタラヨ</title>
   
     <link rel="shortcut icon" href="/imgs/indexpage/favicon.jpg">
   
@@ -348,107 +348,158 @@ body{
   </div>
 </header>
 
-      <link rel="stylesheet" href="/css/donate.css">
-<div class="pattern-center-blank">
-</div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/donate.jpg" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/donate.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0308/imgs/toppage/10.jpg);" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0308/imgs/toppage/10.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      2023-04-02树莓派远程访问的两种方法</h1>
+      <p class="entry-census">
+        <span>
+          <a href="atarayo.xyz">
+            <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0306/imgs/indexpage/ada.jpg">
+          </a>
+        </span>
+        <span>
+          <a href="atarayo.xyz">Sakamodo</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2023-4-2<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="entry-title">谢谢饲主了喵~</h1>
-  </header>
-</div>
+
 <div id="content" class="site-content">
-  <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-  如果喜欢我的博客，可以考虑资助一下哦~非常感激！
-    <div id="root">
-      <div class="root">
-        <a href="https://github.com/Kaiyuan/donate-page" target="_blank" class="pos-f tr3" title="Github"><span id="github"></span></a>
-        <ul id="donateBox" class="list pos-f tr3">
-          <!-- <li id="BTC" data-footnote="Copy addres and show QRCod"><button id="BTCBn"  data-clipboard-target="#btc-key" alt="Copy to clipboard">Bitcoin</button></li> -->
-          <!-- <li id="PayPal"><a href="" target="_blank">PayPal</a></li> -->
-          <li id="AliPay">AliPay</li>
-          <li id="WeChat">WeChat</li>
-        </ul>
-        <div id="DonateText" class="tr3">Donate</div>
-        <div id="QRBox" class="pos-f left-100">
-          <div id="MainBox"></div>
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>把树莓派作为服务器使用的时候一般是不会配套键鼠和屏幕等周边设备的, 为了能够更方便的访问和管理服务器内部的资源需要使用远程访问. 在这里记录两种远程登录树莓派的方法: 命令符的SSH和图形界面的Xdrp</p>
+<h1 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>SSH:Secure Shell,以下引用自Wiki</p>
+<blockquote>
+<p>安全外壳协议（Secure Shell Protocol，简称SSH）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH通过在网络中创建安全隧道来实现SSH客户端与服务器之间的连接。SSH最常见的用途是远程登录系统，人们通常利用SSH来传输命令行界面和远程执行命令。SSH使用频率最高的场合是类Unix系统，但是Windows操作系统也能有限度地使用SSH。2015年，微软宣布将在未来的操作系统中提供原生SSH协议支持，Windows 10 1803版本已提供OpenSSH工具。</p>
+</blockquote>
+<h2 id="配置方法"><a href="#配置方法" class="headerlink" title="配置方法"></a>配置方法</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/66735155">https://zhuanlan.zhihu.com/p/66735155</a></p>
+<h1 id="Xdrp"><a href="#Xdrp" class="headerlink" title="Xdrp"></a>Xdrp</h1><h2 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h2><p>Xdrp是开源的远程桌面协议,简而言之就是可以在另一台电脑上打开服务器的图形界面,能够更直观的操作内容</p>
+<h2 id="配置方法-1"><a href="#配置方法-1" class="headerlink" title="配置方法"></a>配置方法</h2><p><a target="_blank" rel="noopener" href="https://raspberrypi.club/322.html">https://raspberrypi.club/322.html</a></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><strong>远程访问时使用的设备和服务器不在统一网络(WIFI或者有线都可)里的话是不可能能连接上的,除非服务器已经对公网开放</strong></p>
+
         </div>
-        <!-- Bitcoin 账号 -->
-        <!-- <input id="btc-key" type="text" value="14JkMR68n4PBASB3TgvpjtaPTbfffSwFbW" readonly="readonly"> -->
-      </div>
-    </div>
-    <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-    <footer class="post-footer">
-      <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-      <div class="post-tags">
-      </div>
-      <div class="post-share">
-        <div class="social-share sharehidden share-component"></div>
-        <i class="iconfont show-share icon-forward"></i>
-      </div>
-    </footer><!-- .entry-footer -->
-  </article>
-  <section class="author-profile">
-    <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-      <a href="/about/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/indexpage/ada.jpg" itemprop="image" alt="hojun" height="70" width="70"></a>
-      <div class="meta">
-        <span class="title">Author</span>
-        <h3 itemprop="name">
-        <a href="https://sakamodo1998.github.io/" itemprop="url" rel="author">Sakamodo</a>
-        </h3>
-      </div>
-    </div>
-    <hr>
-    <p><i class="iconfont icon-write"></i>We look for stranger things'Cause that's just who we are</p>
-  </section>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/dona/alipay.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/dona/wechatpay.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2022/08/12/2022-08-12DAIKIN%E7%A9%BA%E8%B0%83%E9%81%A5%E6%8E%A7%E5%99%A8%E7%BA%A2%E5%A4%96%E4%BF%A1%E5%8F%B7%E7%9A%84%E8%A7%A3%E6%9E%90/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.loli.net/2022/08/12/4BZe9rANUuypjfC.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://s2.loli.net/2022/08/12/4BZe9rANUuypjfC.png">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                DAIKIN空调遥控器红外信号的解析</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "mPk156zoohoyijKfqNhMro9W-MdYXbMMI",
+        appKey: "uIdzMK9bnkmFSdl53pSkORk7",
+        path: window.location.pathname,
+        placeholder: "We looked for stranger things Cause thats just who we are"
+      })
+  }
+</script>
+
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="atarayo.xyz" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0306/imgs/indexpage/ada.jpg" itemprop="image" alt="Sakamodo" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="atarayo.xyz" itemprop="url" rel="author">Sakamodo</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>受控碳基系统</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script> -->
-  <script>
-    jQuery(document).ready(function() {
-    var QRBox = $('#QRBox');
-    var MainBox = $('#MainBox');
-    var BTCQR = '/images/donate/BTCQR.png'; // 二维码路径
-    var AliPayQR  = 'https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/dona/alipay.jpg';
-    var WeChanQR  = 'https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/dona/wechatpay.jpg';
 
-    function showQR(QR) {
-      if (QR) {
-        MainBox.css('background-image','url('+QR+')');
-      }
-      $('#DonateText,#donateBox,#github').addClass('blur');
-      QRBox.fadeIn(300,function(argument) {
-        MainBox.addClass('showQR');
-      });
-    }
+<!-- 开始添加字数统计-->
 
-    $('#donateBox>li').click(function(event) {
-      var thisID  = $(this).attr('id');
-      if (thisID === 'BTC') {
-        new ClipboardJS('#BTCBn');
-        new ClipboardJS('.btnsss');
-        showQR(BTCQR);
-      } else if (thisID === 'AliPay') {
-        showQR(AliPayQR);
-      } else if (thisID === 'WeChat') {
-        showQR(WeChanQR);
-      }
-    });
+  <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <!-- 安装插件npm install hexo-wordcount --save -->
+        <span class="post-count">396字</span>
+      </span>
+    </span>
 
-    MainBox.click(function(event) {
-      MainBox.removeClass('showQR').addClass('hideQR');
-      setTimeout (function(a) {
-        QRBox.fadeOut(300,function(argument) {
-          MainBox.removeClass('hideQR');
-        });
-        $('#DonateText,#donateBox,#github').removeClass('blur');
-      },600);
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
 
-    });
-  });
-  </script>
+
+<!-- 添加完成 -->
+
+
+
 
     </div>    
     <div class="ins-search">

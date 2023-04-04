@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sakamodo1998.github.io/"/>
-  <updated>2022-08-15T14:09:14.435Z</updated>
+  <updated>2023-04-04T13:53:09.706Z</updated>
   <id>https://sakamodo1998.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023-04-02树莓派远程访问的两种方法</title>
+    <link href="https://sakamodo1998.github.io/2023/04/02/2023-04-02%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/"/>
+    <id>https://sakamodo1998.github.io/2023/04/02/2023-04-02树莓派远程访问的两种方法/</id>
+    <published>2023-04-02T13:09:56.000Z</published>
+    <updated>2023-04-04T13:53:09.706Z</updated>
+    
+    <summary type="html">
+    
+      通过SSH或者远程桌面远程访问树莓派
+    
+    </summary>
+    
+      <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="树莓派" scheme="https://sakamodo1998.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+      <category term="IoT" scheme="https://sakamodo1998.github.io/tags/IoT/"/>
+    
+  </entry>
   
   <entry>
     <title>DAIKIN空调遥控器红外信号的解析</title>
@@ -155,9 +177,9 @@
     
       <category term="Hexo" scheme="https://sakamodo1998.github.io/tags/Hexo/"/>
     
-      <category term="Hexo-Sakura" scheme="https://sakamodo1998.github.io/tags/Hexo-Sakura/"/>
-    
       <category term="Markdown" scheme="https://sakamodo1998.github.io/tags/Markdown/"/>
+    
+      <category term="Hexo-Sakura" scheme="https://sakamodo1998.github.io/tags/Hexo-Sakura/"/>
     
   </entry>
   
