@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sakamodo1998.github.io/"/>
-  <updated>2023-04-04T13:53:09.706Z</updated>
+  <updated>2023-04-05T04:57:58.182Z</updated>
   <id>https://sakamodo1998.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023-04-05FDM形式3D打印常用耗材材料</title>
+    <link href="https://sakamodo1998.github.io/2023/04/05/2023-04-05FDM%E5%BD%A2%E5%BC%8F3D%E6%89%93%E5%8D%B0%E5%B8%B8%E7%94%A8%E8%80%97%E6%9D%90/"/>
+    <id>https://sakamodo1998.github.io/2023/04/05/2023-04-05FDM形式3D打印常用耗材/</id>
+    <published>2023-04-05T02:24:23.000Z</published>
+    <updated>2023-04-05T04:57:58.182Z</updated>
+    
+    <summary type="html">
+    
+      总结了FDM形式的3D打印的3种常用耗材
+    
+    </summary>
+    
+      <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="3D打印" scheme="https://sakamodo1998.github.io/tags/3D%E6%89%93%E5%8D%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>2023-04-02树莓派远程访问的两种方法</title>
@@ -177,9 +197,9 @@
     
       <category term="Hexo" scheme="https://sakamodo1998.github.io/tags/Hexo/"/>
     
-      <category term="Markdown" scheme="https://sakamodo1998.github.io/tags/Markdown/"/>
-    
       <category term="Hexo-Sakura" scheme="https://sakamodo1998.github.io/tags/Hexo-Sakura/"/>
+    
+      <category term="Markdown" scheme="https://sakamodo1998.github.io/tags/Markdown/"/>
     
   </entry>
   
@@ -206,9 +226,9 @@
       <category term="技术" scheme="https://sakamodo1998.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="git" scheme="https://sakamodo1998.github.io/tags/git/"/>
-    
       <category term="cmd" scheme="https://sakamodo1998.github.io/tags/cmd/"/>
+    
+      <category term="git" scheme="https://sakamodo1998.github.io/tags/git/"/>
     
   </entry>
   

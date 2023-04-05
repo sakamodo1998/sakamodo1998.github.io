@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">用git备份本地工程 | アタラヨ</title>
+  <title itemprop="name">Category: 技术 | アタラヨ</title>
   
     <link rel="shortcut icon" href="/imgs/indexpage/favicon.jpg">
   
@@ -348,257 +348,110 @@ body{
   </div>
 </header>
 
-      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+      
 <div class="pattern-center-blank"></div>
-
-  <div class="pattern-center single-center">
-    <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://s2.loli.net/2022/01/11/jR6pFtrihVdaPJE.png);" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.loli.net/2022/01/11/jR6pFtrihVdaPJE.png">
-    </div>
-    <header class="pattern-header single-header">
-      <h1 class="entry-title">
-      用git备份本地工程</h1>
-      <p class="entry-census">
-        <span>
-          <a href="atarayo.xyz">
-            <img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0306/imgs/indexpage/ada.jpg">
-          </a>
-        </span>
-        <span>
-          <a href="atarayo.xyz">Sakamodo</a>
-        </span>
-        <span class="bull">
-        ·</span>
-        2022-1-11<span class="bull">
-        ·</span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
-    </header>
+<div class="pattern-center ">
+  <div class="pattern-attachment-img">
+    <img data-src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0308/imgs/background/night.png" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
   </div>
-
+  <header class="pattern-header ">
+    <h1 class="cat-title">野生技术协会</h1>
+    <span class="cat-des">
+      <p>Geek – Only for Love</p>
+    </span>
+  </header>
+</div>
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
-        <div class="entry-content">
-          <p>  哦对,这个教程是针对Windows10的.</p>
-<h1 id="step0-下载git"><a href="#step0-下载git" class="headerlink" title="step0: 下载git"></a>step0: 下载git</h1><p><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">点这里</a>去git官网然后点第一行的Click here to download来下载最新版的git for windows</p>
-<p>安装过程跟着引导next就行,如果不放心的话可以看看<a target="_blank" rel="noopener" href="https://blog.csdn.net/Small_Yogurt/article/details/104966939">这位大佬</a>的详细教程</p>
-<h1 id="step1-注册github账号并新建一个仓库"><a href="#step1-注册github账号并新建一个仓库" class="headerlink" title="step1: 注册github账号并新建一个仓库"></a>step1: 注册github账号并新建一个仓库</h1><p>注册账号就不说了直接从新建仓库开始8<br>进入github的主页之后点击右上角的小加号然后”new repository”<br><img src="https://s2.loli.net/2022/01/11/FhyNaprdTRBszlf.png"><br>然后再新建的页面里完善仓库的信息,必填的是Owner和Repository name,然后在下面仓库类型的Public和Private里选择一个.<strong>注意! 对于开源的项目可以选择Public,但是像毕业论文这一类的私密项目一定要选择Private!</strong> 不然小心导师提刀来见..</p>
-<p>另外下面的三个方框里建议钩一下Add a README file,README文件的内容会之后在仓库页面里直接显示出来这样以后写些memo的话应该会方便一点</p>
-<p>最后点击最下面的Create repository就ok了.跳出来的页面先放在一边,一会再用.<br><img src="https://s2.loli.net/2022/01/11/VsZWlNtbmgDQr1x.png"></p>
-<h1 id="step2-本地设置git并克隆仓库"><a href="#step2-本地设置git并克隆仓库" class="headerlink" title="step2: 本地设置git并克隆仓库"></a>step2: 本地设置git并克隆仓库</h1><h2 id="配置git用户"><a href="#配置git用户" class="headerlink" title="配置git用户"></a>配置git用户</h2><p>在本地想要存放工程文件的地方右键空白出然后点git bash here<br><img src="https://s2.loli.net/2022/01/11/kCudL82jUMOxcYB.png"><br>然后在弹出的窗口里输入并回车</p>
-<pre><code>git config --global user.email &quot;myemail@email.com&quot;
-</code></pre>
-<p>注意要把”<a href="mailto:&#109;&#x79;&#101;&#109;&#97;&#105;&#x6c;&#64;&#101;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#109;&#x79;&#101;&#109;&#97;&#105;&#x6c;&#64;&#101;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a>“的引号内内容替换成在github注册的邮箱来把本地git和云端账户相关联</p>
-<h2 id="克隆云端仓库到本地"><a href="#克隆云端仓库到本地" class="headerlink" title="克隆云端仓库到本地"></a>克隆云端仓库到本地</h2><p>回到刚才step1打开的仓库页面点击绿色的Code按钮然后选择HTTPS之后复制URL<br><img src="https://s2.loli.net/2022/01/11/BUZ6rmSCftAKoDi.png"></p>
-<p>之后回到命令行里输入</p>
-<pre><code>git clone 复制的URL
-</code></pre>
-<p>此时如果是公共库的话就会自动开始克隆,如果是私有库的话就会弹出输入用户名密码的界面,按照要求输入用户名密码next就行</p>
-<p><img src="https://s2.loli.net/2022/01/11/1PyHLcTvm6FxWjX.png"></p>
-<p>等待克隆完成之后就可以发现和一个和云端同名的文件夹就出现了.打开文件后会发现里面有一个.git的隐藏文件和刚才新建的README.md的说明文件.</p>
-<p>其中.git里存放的是是git仓库的配置文件,不用管,想要深入了解的话可以参照<a target="_blank" rel="noopener" href="https://blog.csdn.net/mayfla/article/details/78653396">这几篇大佬的文章</a>.而README.md如前文所述是工程的说明,使用<a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">markdown</a>语法.可以直接用记事本打开,用来写一些说明和自勉都不错 (<del>比如说干点正事吧巴巴托斯!</del>)</p>
-<p>而这个克隆下来的文件我们就作为本地的工作目录来用,如图把工程直接拖到里面就行<br><img src="https://s2.loli.net/2022/01/11/dc8XfkIYzNM62Ob.png"></p>
-<h1 id="step3-将修改推送到云端"><a href="#step3-将修改推送到云端" class="headerlink" title="step3: 将修改推送到云端"></a>step3: 将修改推送到云端</h1><p>在工程修改完成后就可以用指令把改动过得文件备份到云端了,这里就需要使用经典git三连</p>
-<pre><code>git add .
-git commit -m &quot;更新信息&quot;
-git push
-</code></pre>
-<p>在有.git的那个文件空白处右键打开Git Bash Here把上面三条命令每一条都执行一遍就ok了不过还是老问题公开库可以直接上传,私有库需要按照提示输入用户名密码.</p>
-<p><img src="https://s2.loli.net/2022/01/11/5Lo3M8c1bNJ29fj.png"></p>
-<p>最后不放心可以去github上看看,如图可以发现添加的修改已经反映到云端仓库了,点击绿色Code按钮正下方的那个看着很历史版本的按钮可以查看历史版本都做了什么更改,如果哪次玩大了改完发现代码不动了的话用这个功能就可以说是救命稻草了</p>
-<p><img src="https://s2.loli.net/2022/01/11/7OxYXJSf1zEclKe.png"></p>
-<p><img src="https://s2.loli.net/2022/01/11/ybZHY2cmFStKGOW.png"></p>
-<h1 id="step4-玩点花的"><a href="#step4-玩点花的" class="headerlink" title="step4: 玩点花的"></a>step4: 玩点花的</h1><p>每次都搞那个git三连有一说一属实是很烦.<br>所以写一个脚本搞个一键三连才是正道.</p>
-<p>还是回到有.git文件的文件夹里新建一个txt,把如下代码粘进去然后保存(为了防止乱码建议用另存为,选择编码为ANSI)</p>
-<p>给保存好的txt把后缀名改成cmd,然后双击打开按提示输入更新内容回车剩下的操作就可以自动完成啦</p>
-<p>如果回到根目录找到这个批处理双击也嫌麻烦的话可以直接搞一个快捷方式放到桌面上,做完工文件全关上回到桌面无脑点一下也是很香的</p>
-<pre><code class="bat">@echo off
-
-echo o-----------------------------------o
-echo l 自動備分到git雲端倉庫             l
-echo l 自動在更新massage裏添加日期和時間 l
-echo l 需在已經生成.git的倉庫下使用      l
-echo o-----------------------------------o
-echo:
-
-@echo off
-
-set massage=
-set /p massage=添加更新信息:
-
-echo 好耶! 開始推送
-echo:
-
-echo 1. 添加改動....
-echo:
-
-git add .
-
-echo 2. 添加修改信息....
-echo:
-
-set now=%date% %time%
-set msg=%now% : %massage%
-echo &quot;%msg%&quot;
-echo:
-
-git commit -m &quot;%msg%&quot;
-
-echo:
-echo 3. 推送至云端倉庫....
-echo:
-git push
-
-echo ----------------------------------------------
-
-echo #######  ###   #     #   ###    #####    #     #    ### 
-echo #         #    ##    #    #    #     #   #     #    ### 
-echo #         #    # #   #    #    #         #     #    ### 
-echo #####     #    #  #  #    #     #####    #######     #  
-echo #         #    #   # #    #          #   #     #        
-echo #         #    #    ##    #    #     #   #     #    ### 
-echo #        ###   #     #   ###    #####    #     #    ### 
-
-echo:
-echo:
-
-pause
-</code></pre>
-<p><del>有一说一里面好多代码都是花里胡哨,看着难受的朋友建议酌情删减</del></p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>在本地和github上都搭建了用来备份工程的环境,最后用批处理实现上传了一键三连.</p>
-<p>但是现阶段私有库需要每一次都输入用户密码验证身份,下一篇写下通过配置本地凭据来省略身份验证的步骤</p>
-<hr>
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p>[1] github Docs: <a target="_blank" rel="noopener" href="https://docs.github.com/ja/get-started/quickstart/set-up-git">https://docs.github.com/ja/get-started/quickstart/set-up-git</a><br>[2] .git文件夹详解: <a target="_blank" rel="noopener" href="https://blog.csdn.net/mayfla/article/details/78653396">https://blog.csdn.net/mayfla/article/details/78653396</a><br>[3] Git最新安装教程2020(非常详细): <a target="_blank" rel="noopener" href="https://blog.csdn.net/Small_Yogurt/article/details/104966939">https://blog.csdn.net/Small_Yogurt/article/details/104966939</a><br>[4]Markdown教程: <a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">https://www.runoob.com/markdown/md-tutorial.html</a></p>
-
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏
-            <div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/dona/alipay.jpg"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@220110-2/imgs/dona/wechatpay.jpg"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2022/01/11/2022-01-11%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E7%BD%91%E7%AB%99%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8F%82%E8%80%83/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0308/imgs/toppage/10.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0308/imgs/toppage/10.jpg">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                一些关于网站的技术参考</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2022/01/11/2022-01-11%E5%AD%97%E7%AC%A6%E7%94%BB/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0309/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.loli.net/2022/01/11/UCA4Es7TJSOLPy5.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://s2.loli.net/2022/01/11/UCA4Es7TJSOLPy5.png">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                cmd命令的字符画</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
       
-<div id="vcomments"></div>
-<script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        appId: "mPk156zoohoyijKfqNhMro9W-MdYXbMMI",
-        appKey: "uIdzMK9bnkmFSdl53pSkORk7",
-        path: window.location.pathname,
-        placeholder: "We looked for stranger things Cause thats just who we are"
-      })
-  }
-</script>
-
-
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="atarayo.xyz" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/sakamodo1998/cdn@0306/imgs/indexpage/ada.jpg" itemprop="image" alt="Sakamodo" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="atarayo.xyz" itemprop="url" rel="author">Sakamodo</a>
-            </h3>
-          </div>
+  <!-- 首页默认取最最新文章集 -->
+  
+    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
+  <div class="post-entry">
+    <div class="feature">
+      <a href="/2021/05/16/2021-05-10HelloWorld/">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
         </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i>受控碳基系统</p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
+        <img width="150" height="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/1200px-HelloWorld.svg.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
+      </a>
+    </div>
+    <h1 class="entry-title">
+    <a href="/2021/05/16/2021-05-10HelloWorld/">
+    Hello World</a>
+    </h1>
+    <div class="p-time">
+      <i class="iconfont icon-time">
+      </i>
+    2021-5-16</div>
+    <p>
+    </p>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="/2021/05/16/2021-05-10HelloWorld/">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <hr>
+</article>
+  
+
+
+      <div class="clearer">
+      </div>
+    </main>
+    <!-- 
+      <nav class="navigator">
+        
+        <a class="extend prev" rel="prev" href="/categories/%E6%8A%80%E6%9C%AF/">&lt;i class&#x3D;&quot;iconfont icon-back&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/categories/%E6%8A%80%E6%9C%AF/">1</a><span class="page-number current">2</span>
+      </nav>
+     -->
+    
+  </div>
 </div>
 
-<!-- 开始添加字数统计-->
+<!-- 
+  
+    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
+  <div class="post-entry">
+    <div class="feature">
+      <a href="/2021/05/16/2021-05-10HelloWorld/">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
+        </div>
+        <img width="150" height="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/1200px-HelloWorld.svg.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
+      </a>
+    </div>
+    <h1 class="entry-title">
+    <a href="/2021/05/16/2021-05-10HelloWorld/">
+    Hello World</a>
+    </h1>
+    <div class="p-time">
+      <i class="iconfont icon-time">
+      </i>
+    2021-5-16</div>
+    <p>
+    </p>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="/2021/05/16/2021-05-10HelloWorld/">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <hr>
+</article>
+  
 
-  <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <!-- 安装插件npm install hexo-wordcount --save -->
-        <span class="post-count">1.4k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">5分</span>
-      </span>
-    </span>
-</div>
-
-
-<!-- 添加完成 -->
-
-
-
-
+ -->
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
